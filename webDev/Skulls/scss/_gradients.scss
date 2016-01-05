@@ -1,0 +1,14 @@
+@mixin linear-gradient($top, $bottom) {
+	background-image: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+	background-image: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+	background-image: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+	background-image: linear-gradient(to bottom, $top 0%, $bottom 100%);
+}
+
+@mixin radial-gradient($center, $edge) {
+	background-image: -webkit-radial-gradient(ellipse farthest-corner, $center 0%, $edge 100%);
+	background-image: -moz-radial-gradient(ellipse farthest-corner, $center 0%, $edge 100%);
+	background-image: -ms-radial-gradient(ellipse farthest-corner, $center 0%, $edge 100%);
+	background-image: radial-gradient(ellipse farthest-corner, $center 0%, $edge 100%);
+	background-attachment: fixed;
+}

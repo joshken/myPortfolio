@@ -1,0 +1,51 @@
+$grey: rgb(90, 90, 90);
+$darkGrey: $grey - rgb(40, 40, 40);
+
+@import "gradients";
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	@include radial-gradient($grey, $darkGrey);
+	background-attachment: fixed;
+}
+	
+body {
+	height: 100%;
+}
+
+@import "nav";
+		
+main {
+	width: 100%;
+	max-width: 950px;
+	margin: 30px auto 0px;
+	padding: 20px;
+	border-radius: 12px;
+	border: 1px solid rgb(50, 50, 50);
+	background-color: rgba(160, 60, 70, 0.65);
+	box-shadow: inset 0px 0px 20px rgba(80, 10, 20, 0.50);
+	
+	&:after {
+		content: "";
+		clear: both;
+		height: 0;
+		display: block;
+	}
+	
+	.skull {
+		width: 300px;
+		height: 300px;
+		float: left;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+}
+
+@import "popup";

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: fuck;
+  src: url(/something.ttf); }
+
+/* line 4, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+body {
+  padding-top: 50px; }
+
+/* line 8, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  /* line 14, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #1e1e1e;
+    background-color: rgba(40, 40, 40, 0.7);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); }
+    /* line 24, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+    nav ul li {
+      font-family: CenturyGothic, helvetica, arial, sans-serif;
+      padding: 8 10;
+      font-size: 18px;
+      border-right: 1px solid #505050;
+      flex-grow: 1;
+      color: #969696;
+      cursor: pointer;
+      text-align: center; }
+      /* line 34, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+      nav ul li:hover {
+        background-color: rgba(100, 100, 100, 0.6); }
+      /* line 38, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+      nav ul li:last-child {
+        border: none; }
+
+/*# sourceMappingURL=nav.css.map */

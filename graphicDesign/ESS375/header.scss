@@ -1,0 +1,68 @@
+#content {
+	
+	#header {
+		width: 100%;
+		height: 94px;
+		padding: 0;
+		background: linear-gradient(to bottom, rgb(90, 140, 130) 40%, rgb(30, 95, 120) 100%) rgb(90, 112, 112);
+		box-shadow: 5px 5px 8px rgba(40, 75, 90, 0.5);
+		border-top: 3px solid rgb(40, 140, 190);
+		position: relative;
+		display: flex;
+		
+		img {
+			height: 90px;
+			flex: 0 0 90px;
+			opacity: 0.5;
+			padding: 4px;
+		}
+		
+		& > div {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			
+			#title {
+				color: rgb(40, 65, 90);
+				font-size: 35px;
+				padding: 6px;
+				padding-bottom: 4px;
+			}
+			
+			#lessons {
+				display: flex;
+				padding-left: 6px;
+				
+				span {
+					text-align: center;
+					font-size: 13px;
+					color: rgb(190, 212, 252);
+					background: rgba(0, 0, 0, 0.2);
+					border-radius: 5px;
+					display: block;
+					padding: 4px 6px;
+					margin-right: 10px;
+					
+					&.current {
+						background: rgba(255, 255, 255, 0.2);
+						box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+					}
+				}
+			}
+		}
+	}
+	
+	&.splash #header {
+		background: linear-gradient(to bottom, rgb(54, 186, 200) 0%, rgb(74, 248, 223) 100%) rgb(74, 248, 223);
+		
+		#title {
+			color: rgb(40, 92, 122) !important;
+		}
+		
+		#lessons span {
+			color: rgb(40, 86, 102) !important;
+		}
+	}
+}
+
+@import "styles.css";

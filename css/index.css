@@ -1,0 +1,142 @@
+@font-face {
+  font-family: fuck;
+  src: url(/something.ttf); }
+
+/* line 4, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 8, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+html {
+  height: 100%;
+  background-color: #323232; }
+
+/* line 13, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+body {
+  min-height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #3c3c3c;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); }
+
+/* line 23, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+nav {
+  width: 100%;
+  max-width: 1000px;
+  position: fixed;
+  top: 0; }
+  /* line 29, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #1e1e1e;
+    background-color: rgba(40, 40, 40, 0.95);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); }
+    /* line 39, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+    nav ul li {
+      font-family: CenturyGothic, helvetica, arial, sans-serif;
+      padding: 8 10;
+      font-size: 18px;
+      border-right: 1px solid #505050;
+      flex-grow: 1;
+      color: #969696;
+      cursor: pointer;
+      text-align: center; }
+      /* line 49, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+      nav ul li:hover {
+        background-color: rgba(100, 100, 100, 0.6); }
+      /* line 53, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+      nav ul li:last-child {
+        border: none; }
+
+/* line 60, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+main {
+  font-family: HelveticaNeue-Thin, helvetica, arial, sans-serif;
+  color: #969696;
+  padding: 10 20;
+  padding-top: 40px;
+  font-size: 16px; }
+  /* line 67, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main > img {
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+    @media (max-width: 800px) {
+      /* line 67, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+      main > img {
+        float: none;
+        margin-bottom: 0; } }
+  /* line 80, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    font-family: CenturyGothic, helvetica, arial, sans-serif; }
+  /* line 84, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main h1 {
+    color: black;
+    font-size: 30px; }
+  /* line 89, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main h2 {
+    color: #1e1e1e;
+    font-size: 25px; }
+  /* line 94, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main h3 {
+    color: #646464;
+    font-size: 20px; }
+  /* line 99, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main ul {
+    display: inline-block;
+    margin: 0;
+    list-style-type: square; }
+  /* line 105, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main ul#images {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+    /* line 111, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+    main ul#images li {
+      width: 100%;
+      padding-bottom: 15px; }
+      /* line 115, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+      main ul#images li:last-child {
+        padding-bottom: 0; }
+      /* line 119, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+      main ul#images li img {
+        width: 100%;
+        cursor: pointer; }
+  /* line 126, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid #28befa; }
+    /* line 131, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+    main a:hover {
+      color: #28befa; }
+  /* line 136, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+  main #grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 141, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+    main #grid div {
+      width: 33%;
+      padding: 5px; }
+      @media (max-width: 750px) {
+        /* line 141, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+        main #grid div {
+          width: 50%; } }
+      /* line 149, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+      main #grid div img {
+        width: 100%;
+        cursor: pointer; }
+        /* line 153, /Users/joshkennelly/Sites/Portfolio/css/index.scss */
+        main #grid div img:hover {
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
+
+/*# sourceMappingURL=index.css.map */

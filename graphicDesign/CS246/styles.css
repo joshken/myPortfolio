@@ -1,0 +1,121 @@
+@import url('fonts.css');
+
+* {
+	box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+}
+
+html {
+	background-attachment: fixed;
+	height: 100%;
+	background-image: -webkit-radial-gradient(ellipse farthest-corner, rgb(255, 255, 255) 0%, rgb(146, 234, 248) 0%, rgb(57, 92, 97) 100%);
+	background-image: -moz-radial-gradient(ellipse farthest-corner, rgb(255, 255, 255) 0%, rgb(146, 234, 248) 0%, rgb(57, 92, 97) 100%);
+	background-image: -ms-radial-gradient(ellipse farthest-corner, rgb(255, 255, 255) 0%, rgb(146, 234, 248) 0%, rgb(57, 92, 97) 100%);
+	background-image: radial-gradient(ellipse farthest-corner, rgb(255, 255, 255) 0%, rgb(146, 234, 248) 30%, rgb(57, 92, 97) 100%);
+}
+
+body, .page_color {
+	background: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#content {
+	width: 100%;
+	max-width: 900px;
+	margin: 0px auto;
+	color: rgb(30, 60, 60);
+	font-size: 16px !important;
+	font-family: CenturyGothic, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: rgb(222, 237, 242);
+	box-shadow: 0px 0px 12px rgb(30, 30, 40);
+}
+
+#content.splash {
+	color: rgb(200, 200, 200);
+	background-color: rgb(9, 66, 89);
+}
+
+#content img:first-child {
+	width: 100%;
+}
+
+#content > div {
+	padding: 20px;
+}
+
+#content h1, #content h2, #content h3,
+#content h4, #content h5, #content h6 {
+	font-family: Blair;
+	letter-spacing: 1;
+	font-weight: normal;
+}
+
+#content h1 {
+	font-size: 32px;
+	padding: 0;
+	margin: 0;
+	color: rgb(9, 66, 89);
+}
+
+#content.splash h1 {
+	color: rgb(166, 198, 225);
+}
+
+#content h1 + p {
+	padding-top: 20px;
+}
+
+#content h2 {
+	font-size: 27px;
+	color: rgb(50, 144, 96);
+}
+
+#content h3 {
+	font-size: 24px;
+	margin-bottom: 8px;
+	color: rgb(111, 147, 171);
+}
+
+#content.splash h3 {
+	color: rgb(141, 177, 201);
+}
+
+#content h4 {
+	font-size: 21px;
+	color: rgb(40, 122, 86);
+	margin-bottom: 0px;
+}
+
+#content h5 {
+	font-size: 18px;
+	padding: 3px 0px 0px;
+	margin: 0;
+	color: rgb(68, 135, 175);
+}
+
+#content p {
+	margin-top: 0px;
+}
+
+#content ul li {
+	list-style-type: square;
+}
+
+#content li {
+	padding-bottom: 6px;
+}
+
+#content hr {
+	width: 100%;
+	height: 0px;
+	color: rgb(90, 90, 90);
+	background-color: rgb(90, 90, 90);
+	border-color: rgb(90, 90, 90);
+}
+
+#content.splash hr {
+	color: rgb(200, 200, 200);
+	background-color: rgb(200, 200, 200);
+	border-color: rgb(200, 200, 200);
+}
