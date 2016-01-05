@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <link href='css/index.css' rel='stylesheet' />
+    <script src='JS/jquery.js' type='text/javascript'></script>
+    <script src='JS/index.js' type='text/javascript'></script>
+    <script src='JS/touch.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <main>
+    	<div id="container">
+    		<img src="images/title.png" alt="World Political Systems" />
+    		<div id="map" ontouchstart="touchStart(event);" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);"></div>
+    		<div id="description"></div>
+    		<div class="arrow" id="next" onclick="nextView()"></div>
+    		<div class="arrow" id="prev" onclick="prevView()"></div>
+    	</div>
+    </main>
+  </body>
+</html>

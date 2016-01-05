@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.8em;
+	background-color: rgb(184, 170, 139);
+	font-family: helvetica, arial, sans-serif;
+}
+
+main {
+	width: 650px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	user-select: none;
+	
+	img {
+		width: 100%;
+	}
+	
+}
+
+main > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	& div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+		font-size: 15px;
+	}
+}
+
+#drags {
+	
+	div {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		color: rgb(220, 220, 220);
+		background-color: rgb(157, 141, 112);
+		text-shadow: 0px 0px 3px rgba(30, 30, 30, 0.7);
+		cursor: pointer;
+		
+		&.ui-draggable-dragging {
+			background: rgba(114, 103, 81, 0.85);
+			box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+			cursor: move;
+		}
+		
+	}
+	
+	.correct {
+		background-color: rgba(235, 218, 188, 0.2);
+	}
+}
+
+#drops div {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	color: rgba(255, 255, 255, 0);
+	border: 1px solid rgba(157, 141, 112, .4);
+	
+	&.hovered {
+		border: 3px solid rgba(90, 190, 255, .45);
+	}
+	
+	&:nth-of-type(1) {
+		top: 200;
+		left: 100;
+	}
+	
+	&:nth-of-type(2) {
+		top: 200;
+		left: 250;
+	}
+	
+	&:nth-of-type(3) {
+		top: 200;
+		left: 400;
+	}
+	
+	&:nth-of-type(4) {
+		top: 350;
+		left: 100;
+	}
+	
+	&:nth-of-type(5) {
+		top: 350;
+		left: 250;
+	}
+	
+	&:nth-of-type(6) {
+		top: 350;
+		left: 400;
+	}
+	
+	&:nth-of-type(7) {
+		top: 500;
+		left: 100;
+	}
+	
+	&:nth-of-type(8) {
+		top: 500;
+		left: 250;
+	}
+	
+	&:nth-of-type(9) {
+		top: 500;
+		left: 400;
+	}
+}
+
+#message {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	color: rgb(255, 255, 255);
+	background: rgba(74, 69, 59, 0.8);
+	box-shadow: .2em .2em .5em rgba(0, 0, 0, .8);
+	border-radius: 3px;
+	padding: 30px;
+	display: none;
+	
+	&.show {
+		display: block;
+	}
+	
+	button {
+		font-size: 15px;
+		color: rgb(255, 255, 255);
+		background: rgb(124, 119, 109);
+		border: none;
+		padding: 8px;
+		cursor: pointer;
+	}
+}

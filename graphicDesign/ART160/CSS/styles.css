@@ -1,0 +1,371 @@
+@import url('fonts.css');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@media print {
+	main *, #main * {
+		font-family: sans-serif !important;
+	}
+}
+
+/* Fixes for BrightSpace */
+
+body > p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* End of fixes */
+
+html {
+	height: 100%;
+	background: black;
+	background: -webkit-radial-gradient(ellipse, RGB(245, 248, 249) 0%, RGB(40, 47, 48) 100%);
+	background: radial-gradient(ellipse, RGB(245, 248, 249) 0%, RGB(40, 47, 48) 100%);
+	background-attachment: fixed;
+}
+
+main, #main {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
+	font-size: 16px !important;
+	font-family: CenturyGothic, "Helvetica Neue", Arial, Helvetica;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+}
+
+header img, #header img {
+	width: 100%;
+}
+
+main > article, #main > #article {
+	padding: 20px;
+	color: rgb(60, 60, 60);
+	background-color: RGB(244, 246, 245);
+}
+
+main > article:after, #main > #article:after {
+	content: " ";
+	clear: both;
+	height: 0px;
+	display: block;
+	opacity: 0;
+}
+
+/* Headings */
+
+main h1, main h2, main h3,
+main h4, main h5, main h6,
+#main h1, #main h2, #main h3,
+#main h4, #main h5, #main h6{
+	font-family: Franchise;
+	font-weight: normal;
+}
+
+/* Heading 1 */
+
+main h1, #main h1 {
+	font-size: 50px;
+	color: rgb(64, 79, 79);
+}
+
+main h1 + p, #main h1 + p {
+	padding-top: 20px;
+}
+
+/* Heading 2 */
+
+main h2, #main h2 {
+	font-size: 44px;
+	margin: 15px 0 10px;
+	color: rgb(222, 84, 88);
+}
+
+/* Heading 3 */
+
+main h3, #main h3 {
+	font-size: 38px;
+	margin: 12px 0 4px;
+	color: rgb(108, 119, 122);
+}
+
+/* Heading 4 */
+
+main h4, #main h4 {
+	font-size: 33px;
+	margin: 10px 0 4px;
+	color: rgb(37, 187, 97);
+}
+
+/* Heading 5 */
+
+main h5, #main h5 {
+	font-size: 28px;
+	margin: 3px 0px 0px;
+	color: rgb(105, 171, 186);
+}
+
+/* Paragraphs / Lists */
+
+main p, #main p {
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+main ol, main ul,
+#main ol, #main ul {
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+main ul li, #main ul li {
+	list-style-type: square;
+}
+
+main li, #main li {
+	padding-bottom: 6px;
+}
+
+/* Images / Floating */
+
+main .left, #main .left {
+	float: left;
+	display: block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .right, #main .right {
+	float: right;
+	display: block;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .noFloat:before, #main .noFloat:before {
+	content: " ";
+	display: block;
+	clear: both;
+	opacity: 0;
+	height: 0;
+}
+
+/* Sizing */
+
+main .full, #main .full {
+	width: 100%;
+}
+
+main .half, #main .half {
+	max-width: 50%;
+}
+
+main .quarter, #main .quarter {
+	max-width: 25%;
+}
+
+/* Horizontal Rule */
+
+main hr, #main hr {
+	width: 100%;
+	height: 0px;
+	margin: 10px 0;
+	color: rgb(90, 90, 90);
+	background-color: rgb(90, 90, 90);
+	border-color: rgb(90, 90, 90);
+}
+
+/* Links */
+
+main a, #main a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 2px solid rgb(105, 171, 186);
+}
+
+main a:hover, #main a:hover {
+	color: rgb(105, 171, 186);
+}
+
+/* Tables */
+
+main table.rubric, #main table.rubric {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+}
+
+main table.rubric th, #main table.rubric th {
+	padding: 8px;
+	color: rgb(237, 239, 238);
+	font-weight: normal;
+	background-color: rgb(76, 148, 164);
+	text-align: right;
+}
+
+main table.rubric tr:first-child th,
+#main table.rubric tr:first-child th {
+	padding: 6px;
+	color: rgb(237, 239, 238);
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(108, 119, 122);
+}
+
+main table.rubric td, #main table.rubric td {
+	padding: 8px;
+	color: #333;
+}
+
+main table.rubric tr:nth-child(odd) td,
+#main table.rubric tr:nth-child(odd) td {
+	background-color: rgb(217, 219, 219);
+}
+
+main table.rubric tr:nth-child(even) td,
+#main table.rubric tr:nth-child(even) td {
+	background-color: rgb(237, 239, 238);
+}
+
+/* Page Footer */
+
+main footer, #main #footer {
+	text-align: center;
+	padding: 6px;
+	color: rgb(170, 170, 170);
+	background-color: RGB(47, 55, 55);
+	font-size: 13px;
+}
+
+/* Layout Tools */
+
+div.txtbox, div.quote {
+	margin: 10px 20px;
+	border: 1px solid rgb(37, 187, 97);
+	border-radius: 5px;
+	padding: 6px;
+	font-size: 12px;
+}
+
+/* List Container */
+dl {
+	margin: 10px 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* List Headings */
+dl dt {
+	padding: 8px;
+	font-size: 18px;
+	color: rgb(230, 230, 230);
+	background: rgb(108, 119, 122);
+	border-bottom: 2px solid rgb(37, 187, 97);
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* List Heading Arrows */
+dl dt:after {
+	content: "\276f";
+	color: rgb(230, 230, 230);
+	float: right;
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+/* List Content */
+dl dd {
+	background: rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	height: 0;
+	padding: 0px;
+}
+
+/* Open List Content */
+dl dt.open + dd {
+	height: auto;
+	padding: 8px;
+}
+
+/* Rotate Arrow */
+dl dt.open:after {
+	margin-top: -2px;
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+/* Overview Menu */
+
+#overview {
+	width: 100%;
+	font-family: CenturyGothic;
+}
+
+#overview ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	background-color: RGB(240, 240, 240);
+}
+
+#overview ul li {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	text-align: center;
+	padding: 8px 6px;
+	list-style: none;
+	color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	opacity: 0.8;
+}
+
+#overview ul li:nth-child(odd) {
+	background-color: RGB(60, 60, 60);
+}
+
+#overview ul li:nth-child(even) {
+	background-color: RGB(80, 80, 80);
+}
+
+#overview ul li.selected {
+	-webkit-box-flex: 1.5;
+	-webkit-flex-grow: 1.5;
+	-ms-flex-positive: 1.5;
+	flex-grow: 1.5;
+	font-size: 18px;
+	background-color: #323232;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+	z-index: 1;
+	opacity: 1;
+}

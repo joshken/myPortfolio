@@ -1,0 +1,10 @@
+@font-face {
+	font-family: HelveticaNeueThin;
+	src: url(HelveticaNeueThin.ttf);
+}
+
+@font-face {
+	font-family: HelveticaNeueThin;
+	src: url(HelveticaNeueThinItalic.ttf);
+	font-style: italic;
+}

@@ -1,0 +1,313 @@
+@font-face {
+	font-family: "CenturyGothic";
+	src: url(../fonts/CenturyGothic.ttf);
+}
+
+/* Akko Rounded */
+
+@font-face {
+	font-family: "Akko Rg";
+	src: url(../fonts/Akko/AkkoRoundedStd-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Akko Bd";
+	src: url(../fonts/Akko/AkkoRoundedStd-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Akko Bl";
+	src: url(../fonts/Akko/AkkoRoundedStd-Black.ttf);
+}
+
+/* Avenir Next */
+
+@font-face {
+	font-family: "Avenir Rg";
+	src: url(../fonts/AvenirNext/AvenirNextLTPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Avenir It";
+	src: url(../fonts/AvenirNext/AvenirNextLTPro-It.ttf);
+}
+
+@font-face {
+	font-family: "Avenir Dm";
+	src: url(../fonts/AvenirNext/AvenirNextLTPro-Demi.ttf);
+}
+
+@font-face {
+	font-family: "Avenir Bd";
+	src: url(../fonts/AvenirNext/AvenirNextLTPro-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Avenir Hv";
+	src: url(../fonts/AvenirNext/AvenirNextLTPro-Heavy.ttf);
+}
+
+/* Baskerville */
+
+@font-face {
+	font-family: "Baskerville Rg";
+	src: url(../fonts/Baskerville/BaskervilleMTPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Baskerville It";
+	src: url(../fonts/Baskerville/BaskervilleMTPro-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Baskerville Sm Bd";
+	src: url(../fonts/Baskerville/BaskervilleMTPro-Semibold.ttf);
+}
+
+@font-face {
+	font-family: "Baskerville Sm Bd It";
+	src: url(../fonts/Baskerville/BaskervilleMTPro-SemiboldIt.ttf);
+}
+
+/* Bembo */
+
+@font-face {
+	font-family: "Bembo Rg";
+	src: url(../fonts/BemboBook/BemboBookMTPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Bembo It";
+	src: url(../fonts/BemboBook/BemboBookMTPro-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Bembo Bd";
+	src: url(../fonts/BemboBook/BemboBookMTPro-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Bembo Bd It";
+	src: url(../fonts/BemboBook/BemboBookMTPro-BoldIt.ttf);
+}
+
+/* Bodoni */
+
+@font-face {
+	font-family: "Bodoni Bk";
+	src: url(../fonts/Bodoni/BodoniMTStd-Book.ttf);
+}
+
+@font-face {
+	font-family: "Bodoni Bk It";
+	src: url(../fonts/Bodoni/BodoniMTStd-BookItalic.ttf);
+}
+
+@font-face {
+	font-family: "Bodoni Bd";
+	src: url(../fonts/Bodoni/BodoniMTStd-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Bodoni Bd It";
+	src: url(../fonts/Bodoni/BodoniMTStd-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: "Bodoni Bl";
+	src: url(../fonts/Bodoni/BodoniMTStd-Black.ttf);
+}
+
+/* Centaur */
+
+@font-face {
+	font-family: "Centaur Rg";
+	src: url(../fonts/Centaur/CentaurMTPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Centaur Bd";
+	src: url(../fonts/Centaur/CentaurMTPro-Bold.ttf);
+}
+
+/* Garamond */
+
+@font-face {
+	font-family: "Garamond Rm";
+	src: url(../fonts/StempelGaramond/StempelGaramondLTStd-Roman.ttf);
+}
+
+@font-face {
+	font-family: "Garamond It";
+	src: url(../fonts/StempelGaramond/StempelGaramondLTStd-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Garamond Bd";
+	src: url(../fonts/StempelGaramond/StempelGaramondLTStd-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Garamond Bd It";
+	src: url(../fonts/StempelGaramond/StempelGaramondLTStd-BoldIt.ttf);
+}
+
+/* Neue Haas Grotesk */
+
+@font-face {
+	font-family: "Grotesk Rg";
+	src: url(../fonts/NeueHaasGrotesk/NHaasGroteskDSPro-55Rg.ttf);
+}
+
+@font-face {
+	font-family: "Grotesk It";
+	src: url(../fonts/NeueHaasGrotesk/NHaasGroteskDSPro-56It.ttf);
+}
+
+@font-face {
+	font-family: "Grotesk Md";
+	src: url(../fonts/NeueHaasGrotesk/NHaasGroteskDSPro-65Md.ttf);
+}
+
+@font-face {
+	font-family: "Grotesk Md It";
+	src: url(../fonts/NeueHaasGrotesk/NHaasGroteskDSPro-66MdIt.ttf);
+}
+
+@font-face {
+	font-family: "Grotesk Bd";
+	src: url(../fonts/NeueHaasGrotesk/NHaasGroteskDSPro-75Bd.ttf);
+}
+
+@font-face {
+	font-family: "Grotesk Bl";
+	src: url(../fonts/NeueHaasGrotesk/NHaasGroteskDSPro-95Blk.ttf);
+}
+
+/* Klint */
+
+@font-face {
+	font-family: "Klint Rg";
+	src: url(../fonts/Klint/KlintStd-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Klint It";
+	src: url(../fonts/Klint/KlintStd-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Klint Bd";
+	src: url(../fonts/Klint/KlintStd-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Klint Bd It";
+	src: url(../fonts/Klint/KlintStd-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: "Klint Bl";
+	src: url(../fonts/Klint/KlintStd-Black.ttf);
+}
+
+/* Legacy */
+
+@font-face {
+	font-family: "Legacy Bk";
+	src: url(../fonts/LegacySansITC/LegacySansITCPro-Book.ttf);
+}
+
+@font-face {
+	font-family: "Legacy Bk It";
+	src: url(../fonts/LegacySansITC/LegacySansITCPro-BookItalic.ttf);
+}
+
+@font-face {
+	font-family: "Legacy Bd";
+	src: url(../fonts/LegacySansITC/LegacySansITCPro-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Legacy Ul";
+	src: url(../fonts/LegacySansITC/LegacySansITCPro-Ultra.ttf);
+}
+
+/* Egyptian */
+
+@font-face {
+	font-family: "Egyptian Rg";
+	src: url(../fonts/EgyptianSlate/EgyptianSlateStd-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Egyptian It";
+	src: url(../fonts/EgyptianSlate/EgyptianSlateStd-Italic.ttf);
+}
+
+@font-face {
+	font-family: "Egyptian Bd";
+	src: url(../fonts/EgyptianSlate/EgyptianSlateStd-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Egyptian Bd It";
+	src: url(../fonts/EgyptianSlate/EgyptianSlateStd-BoldItal.ttf);
+}
+
+@font-face {
+	font-family: "Egyptian Bl";
+	src: url(../fonts/EgyptianSlate/EgyptianSlateStd-Black.ttf);
+}
+
+/* Trade Gothic Next */
+
+@font-face {
+	font-family: "Gothic Rg";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-Rg.ttf);
+}
+
+@font-face {
+	font-family: "Gothic It";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-It.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Bd";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-Bd.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Bd It";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-BdIt.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Hv";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-Hv.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Cn";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-Cn.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Cn Bd";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-BdCn.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Cn Hv";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-HvCn.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Cm";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-Cm.ttf);
+}
+
+@font-face {
+	font-family: "Gothic Cm Bd";
+	src: url(../fonts/TradeGothicNext/TradeGothicNextLTPro-BdCm.ttf);
+}

@@ -1,0 +1,428 @@
+main {
+	width: 100%;
+	height: 100%;
+	min-height: 474px;
+	color: $text;
+	font-size: 1.2rem;
+	position: relative;
+	
+	/* Word and Definition */
+	article {
+		width: 100%;
+		height: 172px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: $word;
+		background-color: $articleBG;
+		box-shadow: inset 0px 0px 80px $articleSH;
+		position: relative;
+		border-bottom: 2px solid $separator;
+		
+		#word {
+			font-size: 2.2rem;
+			
+			&.instructions {
+				font-size: 1.2rem;
+				color: $definition;
+			}
+		}
+		
+		#definition {
+			color: $definition;
+			display: none;
+			max-width: 600px;
+			
+			&.show {
+				display: block;
+			}
+		}
+		
+		#system {
+			padding: 4px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2000;
+			font-size: 1.2rem;
+			opacity: 0.3;
+		}
+	}
+	
+	/* Navigation Bar */
+	nav {
+		width: 100%;
+		height: 50px;
+		background-color: $button;
+		
+		& > ul {
+			display: block;
+			list-style: none;
+			height: 100%;
+			
+			& > li {
+				float: left;
+				height: 100%;
+				padding: 8px;
+				position: relative;
+				cursor: pointer;
+				
+				&:hover {
+					background-color: $button + rgb(10, 10, 10);
+					
+					ul {
+						display: block;
+					}
+				}
+				
+				&:active {
+					background-color: $button - rgb(10, 10, 10);
+				}
+				
+				&.selected {
+					background-color: $button - rgb(20, 20, 20);
+				}
+				
+				div {
+					height: 100%;
+					padding-top: 4px;
+					color: rgba(0, 0, 0, 0.4);
+					font-size: 1.4rem;						
+				}
+				
+				img {
+					height: 34px;
+					opacity: 0.4;
+				}
+				
+				ul {
+					display: none;
+					overflow: auto;
+					z-index: 8000;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					white-space: nowrap;
+					background-color: $filterBG;
+					box-shadow: 0px 0px 8px $filterSH;
+					
+					li {
+						color: $filterTXT;
+						padding: 6px;
+						
+						cursor: pointer;
+						
+						&:hover {
+							color: white;
+							background-color: $filterHV;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/* Term Lists */
+	& > div {
+		display: flex;
+		width: 100%;
+		
+		ul {
+			flex-grow: 1;
+			list-style: none;
+			display: block;
+			background-color: $listBG;
+			border-right: 1px solid $separator;
+			overflow: auto;
+			
+			li {
+				width: 100%;
+				height: 42px;
+				padding: 10px;
+				color: $listTXT;
+				border-top: 1px solid $listBorderT;
+				border-bottom: 1px solid $listBorderB;
+				white-space: nowrap;
+				overflow: hidden;
+				cursor: pointer;
+				
+				&.blank {
+					border: none;
+					cursor: default;
+				}
+				
+				&.header {
+					font-size: 13px;
+					height: auto;
+					padding: 6px 10px;
+					font-variant: small-caps;
+					color: rgb(160, 160, 160);
+					background-color: rgb(245, 245, 245);
+					border-bottom: 1px solid rgb(170, 170, 170);
+					cursor: default;			
+				}
+								
+				&.selected {
+					background-color: $selectBG;
+					box-shadow: inset 0px 0px 14px $selectSH;
+				}
+				
+				.definition {
+					font-size: .7rem;
+					color: $definition;
+				}
+			}
+		}
+	}
+}
+
+/* @group WORDLIST */
+
+aside {
+	position: absolute;
+	top: 0;
+	right: -260;
+	width: 260px;
+	height: 100%;
+	font-size: 1.4rem;
+	background-color: rgba(40, 40, 40, .95);
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	
+	&.show {
+		right: 0;
+		
+		section {
+			display: block;
+		}
+	}
+	
+	div {
+		position: absolute;
+		left: -40px;
+		padding: 3px 8px;
+		font-size: 1.8rem;
+		height: 50px;
+		width: 40px;
+		color: rgba(0, 0, 0, .4);
+		cursor: pointer;
+		
+		&:hover {
+			background-color: $button + rgb(10, 10, 10);
+		}
+		
+		&:active {
+			background-color: $button - rgb(10, 10, 10);
+		}
+		
+		&.selected {
+			background-color: $button - rgb(20, 20, 20);
+		}
+	}
+	
+	section {
+		background-color: rgba(0, 0, 0, .45);
+		position: absolute;
+		top: 0;
+		right: 100%;
+		width: 9000px;
+		height: 100%;
+		display: none;
+		cursor: pointer;
+	}
+	
+	ul {
+		list-style: none;
+		height: 100%;
+		color: rgb(170, 170, 170);
+		overflow: auto;
+		padding-bottom: 43px;
+		
+		li {
+			padding: 8px;
+			text-align: right;
+			cursor: pointer;
+			
+			&:nth-child(odd) {
+				background-color: rgba(150, 150, 150, 0.1);
+			}
+			
+			&:nth-child(even) {
+				background-color: rgba(150, 150, 150, 0.2);
+			}
+			
+			&.header {
+				font-size: 14px;
+				text-transform: uppercase;
+				color: white;
+				background-color: rgba(255, 255, 255, 0.3);
+				cursor: default;
+			}
+		}
+	}
+	
+	#print {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		width: 100%;
+		height: 43px;
+		text-align: center;
+		font-size: 1.6rem;
+		padding: 6px;
+		color: rgb(60, 60, 60);
+		background-color: rgba(160, 160, 160, 0.95);
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+		
+		&:hover {
+			background-color: rgba(180, 180, 180, 0.95);
+			box-shadow: inset 0px 0px 20px rgb(200, 200, 200), 0px 0px 5px rgba(0, 0, 0, 0.75);
+		}
+		
+		&:active {
+			box-shadow: inset 0px 0px 20px rgb(100, 100, 100), 0px 0px 5px rgba(0, 0, 0, 0.75);;
+		}
+	}
+}
+
+/* @end */
+
+/* @group PRINT MODE */
+
+body.print {
+	overflow: visible;
+	height: auto;
+	width: auto;
+	
+	main {
+		height: auto;
+		font-family: sans-serif !important;
+		overflow: visible;
+		
+		& + aside {
+			display: none;
+		}
+		
+		& ~ #print {
+			display: none;
+		}
+		
+		article {
+			padding: 10px;
+			font-size: 22px;
+			text-align: left;
+			background: none;
+			box-shadow: none;
+			display: block;
+			height: auto;
+			min-height: 0px;
+			border-bottom: 1px solid $separator;
+			
+			#system {
+				display: none;
+			}
+		}
+		
+		nav {
+			display: none;
+		}
+		
+		& > div {
+			height: auto;
+			
+			ul {
+				background: transparent;
+				overflow: visible;
+				height: auto;
+				border: none;
+			}
+			
+			ul:nth-of-type(1):before {
+				content: "Prefixes";
+				color: black;
+				padding: 10px;
+				line-height: 180%;
+			}
+			
+			ul:nth-of-type(2):before {
+				content: "Root Words";
+				color: black;
+				padding: 10px;
+				line-height: 180%;
+			}
+			
+			ul:nth-of-type(3):before {
+				content: "Suffixes";
+				color: black;
+				padding: 10px;
+				line-height: 180%;
+			}
+			
+			li {
+				white-space: normal;
+				cursor: default;
+				overflow: visible;
+				border: 1px solid $listBorderB;
+				height: auto;
+				
+				&.selected {
+					background: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+}
+
+body.wordlist {
+	height: auto;
+	width: auto;
+	overflow: visible;
+	font-family: sans-serif !important;
+	
+	main {
+		display: none;
+	}
+	
+	aside {
+		position: static;
+		width: auto;
+		height: auto;
+		background: transparent;
+		-webkit-transition: none;
+		transition: none;
+	
+		div, section {
+			display: none;
+		}
+		
+		ul {
+			overflow: visible;
+			padding: 0px;
+			height: auto;
+		}
+		
+		li {
+			color: black;
+			background: transparent;
+			text-align: left;
+			font-size: 1.0rem;
+			cursor: default;
+			padding: 5px 10px;
+			float: left;
+			
+			&.header {
+				width: 100%;
+				font-size: 1.2rem;
+				clear: both;
+				padding-top: 20px;
+				border-bottom: 3px solid rgb(90, 90, 90);
+			}
+		}
+	}
+}
+
+/* @end */

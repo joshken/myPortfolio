@@ -1,0 +1,240 @@
+@font-face {
+	font-family: CenturyGothic;
+	src: url('gothic.ttf');
+}
+
+html {
+	height: 100%;	
+}
+
+body {
+	height: 100%;
+	font-family: CenturyGothic, helvetica, verdana, geneva;
+	font-size: 12px;
+	color: rgb(100, 100, 100);
+}
+
+div {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+/*********************************
+ * HOLDER
+ * Contains the infographic
+ *********************************/
+
+#holder {
+	position: relative;
+	text-align: center;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	height: 780px;
+}
+
+/*********************************
+ * CIRCLE
+ * The circle in the middle of
+ * the graphic that displays the
+ * definitions of the terms
+ *********************************/
+
+#circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 150px;
+	margin-top: -75px;
+	margin-left: -75px;
+	padding: 32px;
+	background: #fffdec;
+	border-radius: 50%;
+	border: 3px solid rgb(197, 193, 190);
+	z-index: 1000;
+	pointer-events: none;
+}
+
+/* The same circle only bigger */
+#circle.big {
+	width: 232px;
+	height: 232px;
+	margin-top: -116px;
+	margin-left: -116px;
+}
+
+/* Bigger circle with a drop shadow */
+#circle.bigger {
+	width: 240px;
+	height: 240px;
+	margin-top: -120px;
+	margin-left: -120px;
+	box-shadow: 0px 0px 10px rgb(90, 90, 90);
+}
+
+/* Formats the table within the circle */
+#circle table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+/* Formats the text in the circle */
+#circle #text {
+	width: 100%;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+/*********************************
+ * GENERAL IMAGE FORMATTING
+ * Formats all the images in the
+ * graphic to be absolutely
+ * positioned and be hidden when
+ * needed
+ *********************************/
+
+#holder img {
+	position: absolute;
+}
+
+#holder img.hidden {
+	visibility: hidden;
+}
+
+/*********************************
+ * CATEGORIES
+ * The induction and deduction
+ * images
+ *********************************/
+
+#induction {
+	top: 50%;
+	left: 22px;
+	margin-top: -94px;
+}
+
+/* Replaces the induction image with an arrow */
+#inductionarrow {
+	top: 50%;
+	left: 0px;
+	margin-top: -225px;
+}
+
+#deduction {
+	top: 50%;
+	right: 19px;
+	margin-top: -92px;
+}
+
+/* Replaces the deduction image with an arrow */
+#deductionarrow {
+	top: 50%;
+	right: 0px;
+	margin-top: -221px;
+}
+
+/*********************************
+ * TERMS
+ * The images for the terms
+ *********************************/
+
+/* Theory (full-sized) */
+#one {
+	top: 0px;
+	left: 50%;
+	margin-left: -205px;
+}
+
+/* Theory (small) */
+#one.small {
+	top: 45px;
+	width: 350px;
+	margin-left: -176px;
+	z-index: 6;
+}
+
+/* Hypothesis (full-sized) */
+#two {
+	right: 4px;
+	bottom: 50%;
+	margin-bottom: -44px;
+}
+
+/* Hypothesis (small) */
+#two.small {
+	right: 52px;
+	width: 303px;
+	margin-bottom: -35px;
+	z-index: 5;
+}
+
+/* Design Research (full-sized) */
+#three {
+	right: 4px;
+	top: 50%;
+	margin-top: -16px;
+}
+
+/* Design Research (small) */
+#three.small {
+	right: 52px;
+	width: 300px;
+	margin-top: -5px;
+	z-index: 4;
+}
+
+/* Observation (full-sized) */
+#four {
+	bottom: 0px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+/* Observation (small) */
+#four.small {
+	bottom: 45px;
+	width: 348px;
+	margin-left: -171px;
+	z-index: 3;
+}
+
+/* Generalizations (full-sized) */
+#five {
+	left: 4px;
+	top: 50%;
+	margin-top: -36px;
+}
+
+/* Generalizations (small) */
+#five.small {
+	left: 56px;
+	width: 300px;
+	margin-top: -28px;
+	z-index: 2;
+}
+
+/* Theory Construction (full-sized) */
+#six {
+	left: 4px;
+	bottom: 50%;
+	margin-bottom: -17px;
+}
+
+/* Theory Construction (small) */
+#six.small {
+	left: 56px;
+	width: 297px;
+	margin-bottom: -7px;
+	z-index: 1;
+}
+
+#arrow {
+	bottom: 50%;
+	left: 56px;
+	width: 297px;
+	margin-bottom: -7px;
+	z-index: 7;
+	pointer-events: none;
+}

@@ -1,0 +1,275 @@
+@import "fonts";
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: "SanFrancisco";
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: rgb(140, 140, 140);
+}
+
+#content {
+	width: 100%;
+	min-width: 700px;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: rgb(70, 70, 70);
+	box-shadow: 0px 0px 8px black;
+	
+	p {
+		color: white;
+		padding: 10px;
+		background: rgb(45, 45, 45);
+	}
+	
+	& > img {
+		width: 100%;
+	}
+}
+
+main {
+	width: 100%;
+	display: flex;
+	
+	section {
+		width: 40%;
+		position: relative;
+		cursor: pointer;
+		
+		header {
+			width: 100%;
+			padding: 10px;
+			background: rgb(49, 49, 49);
+			font-size: 16px;
+			border-top: 1px solid rgb(30, 30, 30);
+			color: rgb(255, 170, 80);
+			text-transform: uppercase;
+			
+			.selected {
+				float: right;
+				display: block;
+				font-size: 16px;
+				color: rgb(200, 200, 200);
+			}
+			
+			&:after {
+				content: " ";
+				clear: both;
+				display: block;
+				height: 0;
+				opacity: 0;
+			}
+		}
+		
+		article {
+			position: relative;
+			height: calc(100% - 40px);
+		}
+	}
+	
+	aside {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		
+		section {
+			width: 100%;
+			height: 25%;
+			
+			&:nth-child(odd) {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+			
+			&:nth-child(even) {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+			
+			img {
+				max-width: 100%;
+				max-height: 100%;
+				height: 90%;
+				opacity: 0.7;
+				display: block;
+			}
+		}
+	}
+}
+
+#partBox {
+	img {
+		height: 94%;
+		display: block;
+		position: absolute;
+		opacity: 0.7;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	#highlight {
+		height: 94%;
+		display: block;
+		position: absolute;
+		opacity: 1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+#meter {
+	width: 90%;
+	height: 25px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 8px rgb(80, 80, 80);
+	margin: 90px auto 10px;
+	position: relative;
+	
+	#bar {
+		width: 2%;
+		height: 100%;
+		background-color: rgb(150, 58, 53);
+		border-radius: 3px;
+		box-shadow: inset 0px 0px 8px rgba(200, 200, 200, 0.1);
+		transition: width 0.3s, background-color 0.2s;
+	}
+	
+	#snailImg {
+		position: absolute;
+		bottom: 105%;
+		left: 0;
+		height: 70px;
+		width: 70px;
+		background-image: url(../images/snail.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		opacity: 0.7;
+	}
+	
+	#rabbitImg {
+		position: absolute;
+		bottom: 105%;
+		right: 0;
+		height: 70px;
+		width: 70px;
+		background-image: url(../images/rabbit.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		opacity: 0.7;
+	}
+	
+	.lines {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		border-right: 1px solid rgba(0, 0, 0, .4);
+		
+		&#ImperceptiblySlow { width: 0px; border: none; }
+		&#Snail { width: 10%; }
+		&#Med-slow { width: 25%; }
+		&#Medium { width: 40%; }
+		&#Med-fast { width: 55%; }
+		&#Fast { width: 70%; }
+		&#Quick { width: 85%; }
+		&#Hyper { width: 100%; border: none; }
+	}	
+}
+
+#gage {
+	width: 80%;
+	height: 75%;
+	overflow: hidden;
+	margin: 20px auto;
+	position: relative;
+	
+	#bar {
+		width: 100%;
+		height: 200%;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		background-image: linear-gradient(to right, rgb(12, 163, 239) 0%, rgb(209, 73, 65) 60%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+	#cover {
+		width: 50%;
+		height: 100%;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		background-color: rgb(107, 107, 107);
+		position: absolute;
+		top: 50%;
+		left: 15%;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+	}
+	
+	#needle {
+		position: absolute;
+		bottom: -8px;
+		right: 25%;
+		width: 70%;
+		transform: rotate(0deg);
+		transition: all 0.2s;
+	}
+}
+
+$arrow: rgb(20, 190, 95);
+
+#direction {
+	height: 88%;
+	display: block;
+	margin: 10px auto;
+	fill: rgba(255, 255, 255, 0.7);
+	
+	&.fwd #fwd { fill: $arrow; }
+	&.back #back { fill: $arrow; }
+	&.left #left { fill: $arrow; }
+	&.right #right { fill: $arrow; }
+	&.fwdL #fwdL { fill: $arrow; }
+	&.fwdR #fwdR { fill: $arrow; }
+	&.backL #backL { fill: $arrow; }
+	&.backR #backR { fill: $arrow; }
+	&.up #up { fill: $arrow; }
+	&.in .in { fill: $arrow; }
+	&.down #down { fill: $arrow; }
+}
+
+#level {
+	height: 90%;
+	margin: 10px auto;
+	background-image: url(../images/ground.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	
+	&.low {
+		background-image: url(../images/low.jpg);
+	}
+	
+	&.mid {
+		background-image: url(../images/mid.jpg);
+	}
+	
+	&.high {
+		background-image: url(../images/high.jpg);
+	}
+	
+	&.air {
+		background-image: url(../images/air.jpg);
+	}
+}

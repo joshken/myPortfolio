@@ -1,0 +1,119 @@
+@mixin center($width, $height) {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: #{-1 * ($height / 2)}px;
+	margin-left: #{-1 * ($width / 2)}px;
+	width: #{$width}px;
+	height: #{$height}px;
+}
+
+@mixin animate($name, $duration, $fill) {
+	-webkit-animation-name: #{$name};
+	animation-name: #{$name};
+	-webkit-animation-duration: #{$duration};
+	animation-duration: #{$duration};
+	-webkit-animation-fill-mode: #{$fill};
+	animation-fill-mode: #{$fill};
+}
+
+@mixin scale($scale) {
+	-webkit-transform: scale($scale);
+	-ms-transform: scale($scale);
+	transform: scale($scale);
+}
+
+.popup {
+	@include center(600, 500);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(0, 0, 0, .8);
+	box-shadow: 0px 0px 8px black;
+	border-radius: 4px;
+	opacity: 0;
+	pointer-events: none;
+	
+	#close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 15px;
+		height: 15px;
+		background-image: url(../images/x.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		opacity: 0.6;
+	}
+	
+	#next {
+		position: absolute;
+		top: 50%;
+		margin-top: -43.5px;
+		right: 15px;
+		width: 33px;
+		height: 87px;
+		background-image: url(../images/right.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		opacity: 0.6;	
+	}
+	
+	#prev {
+		position: absolute;
+		top: 50%;
+		margin-top: -43.5px;
+		left: 15px;
+		width: 33px;
+		height: 87px;
+		background-image: url(../images/left.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		opacity: 0.6;
+	}
+}
+
+@-webkit-keyframes scale {
+  0% {
+    @include scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    @include scale(1.1);
+    opacity: 0.8;
+  }
+
+  100% {
+    @include scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    @include scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    @include scale(1.1);
+    opacity: 0.8;
+  }
+
+  100% {
+    @include scale(1);
+    opacity: 1;
+  }
+}
+
+.scale {
+	@include animate("scale", ".6s", "both");
+  	pointer-events: auto !important;
+}

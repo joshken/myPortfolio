@@ -1,0 +1,66 @@
+@import url(styles.css);
+#content #header {
+  width: 100%;
+  height: 94px;
+  padding: 0;
+  background: -webkit-linear-gradient(top, #5a8c82 40%, #1e5f78 100%) #5a7070;
+  background: linear-gradient(to bottom, #5a8c82 40%, #1e5f78 100%) #5a7070;
+  box-shadow: 5px 5px 8px rgba(40, 75, 90, 0.5);
+  border-top: 3px solid #288cbe;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  #content #header img {
+    height: 90px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 90px;
+        -ms-flex: 0 0 90px;
+            flex: 0 0 90px;
+    opacity: 0.5;
+    padding: 4px; }
+  #content #header > div {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #content #header > div #title {
+      color: #28415a;
+      font-size: 35px;
+      padding: 6px;
+      padding-bottom: 4px; }
+    #content #header > div #lessons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 6px; }
+      #content #header > div #lessons span {
+        text-align: center;
+        font-size: 13px;
+        color: #bed4fc;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: block;
+        padding: 4px 6px;
+        margin-right: 10px; }
+        #content #header > div #lessons span.current {
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); }
+#content.splash #header {
+  background: -webkit-linear-gradient(top, #36bac8 0%, #4af8df 100%) #4af8df;
+  background: linear-gradient(to bottom, #36bac8 0%, #4af8df 100%) #4af8df; }
+  #content.splash #header #title {
+    color: #285c7a !important; }
+  #content.splash #header #lessons span {
+    color: #285666 !important; }

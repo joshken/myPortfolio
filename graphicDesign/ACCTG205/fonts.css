@@ -1,0 +1,22 @@
+@font-face {
+	font-family: Avenir;
+	src: url(Avenir_400.ttf);
+}
+
+@font-face {
+	font-family: Avenir;
+	src: url(Avenir_500.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: Avenir;
+	src: url(Avenir_600.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Avenir;
+	src: url(Avenir_700.ttf);
+	font-weight: 700;
+}

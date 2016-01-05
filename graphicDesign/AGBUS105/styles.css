@@ -1,0 +1,245 @@
+@import url('fonts.css');
+
+html {
+	background-attachment: fixed;
+	height: 100%;
+	background-image: -webkit-radial-gradient(ellipse farthest-corner, rgb(51, 115, 125) 30%, rgb(6, 45, 50) 100%);
+	background-image: -moz-radial-gradient(ellipse farthest-corner, rgb(51, 115, 125) 30%, rgb(6, 45, 50) 100%);
+	background-image: -ms-radial-gradient(ellipse farthest-corner, rgb(51, 115, 125) 30%, rgb(6, 45, 50) 100%);
+	background-image: radial-gradient(ellipse farthest-corner, rgb(51, 115, 125) 30%, rgb(6, 45, 50) 100%);
+}
+
+/* Get rid of borders on journals */
+.x-blog-border {
+  border: none !important;
+}
+
+/* Fix box height for journals */
+#blogTitleArea___Page {
+  max-height: 10000px !important;
+}
+
+body, .page_color {
+	background: none;
+}
+
+body div {
+	box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+}
+
+#content {
+	width: 100%;
+	max-width: 900px;
+	margin: 0px auto;
+	color: rgb(60, 60, 60);
+	font-family: CenturyGothic, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: rgb(230, 230, 230);
+	box-shadow: 0px 0px 12px rgb(4, 30, 40);
+}
+
+#content.splash {
+	background-color: rgb(82, 15, 9);
+	color: rgb(222, 222, 203);
+}
+
+#content > img:first-child {
+	width: 100%;
+}
+
+#content > div {
+	padding: 20px;
+}
+
+#content h1, #content h2, #content h3,
+#content h4, #content h5, #content h6 {
+	font-family: Museo, Palatino;
+	font-weight: normal;
+}
+
+#content h1 {
+	font-size: 28pt;
+	font-variant: small-caps;
+	padding: 0;
+	margin: 0;
+	color: rgb(69, 129, 67);
+}
+
+#content.splash h1 {
+	color: rgb(153, 207, 149);
+}
+
+#content h1 + p {
+	padding-top: 20px;
+}
+
+#content h2 {
+	font-size: 22pt;
+	font-weight: normal;
+	color: rgb(62, 83, 117);
+}
+
+#content.splash h2 {
+	color: rgb(143, 168, 217);
+}
+
+#content h3 {
+	font-size: 21pt;
+	margin-bottom: 8px;
+	font-variant: small-caps;
+	color: rgb(52, 117, 128);
+}
+
+#content.splash h3 {
+	color: rgb(63, 141, 153);
+}
+
+#content h4 {
+	font-size: 16pt;
+	color: rgb(93, 156, 89);
+	margin-bottom: 0px;
+}
+
+#content.splash h4 {
+	color: rgb(132, 179, 129);
+}
+
+#content h5 {
+	font-size: 14pt;
+	padding: 3px 0px 0px;
+	margin: 0;
+	color: rgb(54, 74, 112);
+}
+
+#content.splash h5 {
+	color: rgb(128, 150, 194);
+}
+
+#content p {
+	margin-top: 0px;
+	line-height: 22px;
+}
+
+#content ul li {
+	list-style-type: square;
+}
+
+#content li {
+	padding-bottom: 6px;
+}
+
+#content hr {
+	width: 100%;
+	height: 0px;
+	color: rgb(90, 90, 90);
+	background-color: rgb(90, 90, 90);
+	border-color: rgb(90, 90, 90);
+}
+
+/* Objective box */
+
+#content .objective {
+	width: 100%;
+	padding: 8px;
+	font-family: Museo, Palatino;
+	font-size: 20px;
+	text-align: center;
+	color: rgb(240, 240, 240);
+	background-color: rgb(77, 103, 145);
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px rgb(40, 40, 40);
+	margin-bottom: 15px;
+}
+
+/* LINKS*/
+
+#content a {
+   color: inherit;
+   text-decoration: none;
+   border-bottom: 2px solid rgb(93, 156, 89);
+}
+
+#content a:hover {
+   color: rgb(93, 156, 89);
+}
+
+#content.splash a {
+	border-color: rgb(143, 168, 217);
+}
+
+#content.splash a:hover {
+	color: rgb(143, 168, 217);
+}
+
+/* Tables */
+
+#content table {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+}
+
+#content tr:first-child th {
+	color: rgb(240, 240, 240);
+	background-color: rgb(10, 74, 93);
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 6px !important;
+}
+
+#content.splash tr:first-child th {
+	background-color: rgb(14, 102, 128);
+}
+
+#content th {
+	color: rgb(255, 255, 255);
+	background-color: rgb(60, 150, 143);
+	font-weight: normal;
+	text-align: center;
+	padding: 6px !important;
+}
+
+#content.splash th {
+	background-color: rgb(64, 160, 153);
+} 
+
+#content tr:nth-child(odd) td {
+	background-color: rgb(240, 240, 240);
+}
+
+#content tr:nth-child(even) td {
+	background-color: rgb(230, 230, 230);
+}
+
+#content td {
+	padding: 6px;
+}
+
+#content table.noStripes tr td {
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+#content table.noStripes tr td:last-child {
+	border-right: 1px solid rgb(190, 190, 190);
+}
+
+#content table.noStripes tr {
+	background-color: rgb(230, 230, 230);
+}
+
+/* Schedule */
+
+#content .schedule tr:first-child th:first-child,
+#content .schedule td:first-child {
+	text-align: left;
+}
+
+#content .schedule tr:first-child th:last-child,
+#content .schedule td:last-child {
+	text-align: right;
+}
+
+#content .schedule th {
+	text-align: center;
+}

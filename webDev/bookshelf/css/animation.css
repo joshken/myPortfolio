@@ -1,0 +1,49 @@
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.8; }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.8; }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+}
+    
+.scale {
+  	-webkit-animation-name: scale;
+  	animation-name: scale;
+  	-webkit-animation-duration: .6s;
+  	animation-duration: .6s;
+  	-webkit-animation-fill-mode: both;
+  	animation-fill-mode: both;
+	pointer-events: auto !important;
+}

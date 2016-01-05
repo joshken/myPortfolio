@@ -1,0 +1,172 @@
+@import url('fonts.css');
+
+html {
+	background-attachment: fixed;
+	height: 100%;
+	background-image: -webkit-radial-gradient(ellipse farthest-corner, rgb(12, 180, 188) 0%, rgb(15, 77, 88) 100%);
+	background-image: -moz-radial-gradient(ellipse farthest-corner, rgb(12, 180, 188) 0%, rgb(15, 77, 88) 100%);
+	background-image: -ms-radial-gradient(ellipse farthest-corner, rgb(12, 180, 188) 0%, rgb(15, 77, 88) 100%);
+	background-image: radial-gradient(ellipse farthest-corner, rgb(12, 180, 188) 0%, rgb(15, 77, 88) 100%);
+}
+
+body, .page_color {
+	background: none;
+}
+
+body div {
+	box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+}
+
+#content {
+	width: 100%;
+	max-width: 900px;
+	margin: 0px auto;
+	color: rgb(60, 60, 60);
+	font-family: CenturyGothic, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: rgb(240, 240, 240);
+	box-shadow: 0px 0px 12px rgb(4, 57, 61);
+}
+
+#content.splash {
+	background-color: rgb(49, 35, 50);
+	color: rgb(180, 180, 180);
+}
+
+#content > img:first-child {
+	width: 100%;
+}
+
+#content > div {
+	padding: 20px;
+}
+
+#content h1, #content h2, #content h3,
+#content h4, #content h5, #content h6 {
+	font-family: Palatino, Georgia, Rockwell;
+	font-weight: normal;
+}
+
+#content h1 {
+	font-size: 26pt;
+	font-variant: small-caps;
+	padding: 0;
+	margin: 0;
+	color: rgb(105, 75, 107);
+}
+
+#content.splash h1 {
+	color: #eaf2bf;
+}
+
+#content h1 + p {
+	padding-top: 20px;
+}
+
+#content h2 {
+	font-size: 22pt;
+	font-weight: normal;
+	color: #ba8cb8;
+}
+
+#content h3 {
+	font-size: 20pt;
+	margin-bottom: 8px;
+	font-variant: small-caps;
+	color: rgb(23, 118, 135);
+}
+
+#content h4 {
+	font-size: 16pt;
+	color: rgb(138, 103, 136);
+	margin-bottom: 0px;
+}
+
+#content h5 {
+	font-size: 14pt;
+	padding: 3px 0px 0px;
+	margin: 0;
+	color: rgb(9, 151, 158);
+}
+
+#content p {
+	margin-top: 0px;
+}
+
+#content ul li {
+	list-style-type: square;
+}
+
+#content li {
+	padding-bottom: 6px;
+}
+
+#content hr {
+	width: 100%;
+	height: 0px;
+	color: rgb(90, 90, 90);
+	background-color: rgb(90, 90, 90);
+	border-color: rgb(90, 90, 90);
+}
+
+/* SPLASH LINKS */
+
+#content.splash a {
+	color: #ba8cb8;
+   	font-weight: bold;
+	text-decoration: none;
+}
+
+#content.splash a:hover {
+   	text-decoration: underline;
+}
+
+
+/* CONTENT LINKS*/
+
+#content a {
+   	color: rgb(138, 103, 136);
+   	font-weight: bold;
+	text-decoration: none;
+}
+
+#content a:hover {
+   	text-decoration: underline;
+}
+
+/* Tables */
+
+#content table {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+}
+
+#content th {
+	padding: 8px;
+	color: white;
+	font-weight: normal;
+	background-color: rgb(70, 151, 166);
+	text-align: right;
+}
+
+#content tr:first-child th {
+	padding: 6px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(80, 57, 82);
+}
+
+#content td {
+	padding: 8px;
+	color: #333;
+}
+
+#content tr:nth-child(odd) td {
+	background-color: rgb(220, 210, 220);
+}
+
+#content tr:nth-child(even) td {
+	background-color: rgb(230, 220, 230);
+}

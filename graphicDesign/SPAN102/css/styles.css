@@ -1,0 +1,344 @@
+@import url('fonts.css');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@media print {
+	main *, #main * {
+		font-family: sans-serif !important;
+	}
+}
+
+/* Fixes for BrightSpace */
+
+body > p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* End of fixes */
+
+main, #main {
+	width: 100%;
+    max-width: 950px;
+	margin: 0 auto;
+	color: rgb(60, 60, 60);
+	font-size: 16px !important;
+	font-family: CenturyGothic, "Helvetica Neue", Arial, Helvetica;
+	background-color: rgb(230, 230, 230);
+}
+
+main.splash, #main.splash {
+	background-color: rgb(45, 69, 83);
+	color: rgb(200, 200, 200);
+}
+
+header img, #header img {
+	width: 100%;
+}
+
+main > article, #main > #article {
+	padding: 20px;
+}
+
+main > article:after, #main > #article:after {
+content: " ";
+clear: both;
+height: 0px;
+display: block;
+opacity: 0;
+}
+
+/* Headings */
+
+main h1, main h2, main h3,
+main h4, main h5, main h6,
+#main h1, #main h2, #main h3,
+#main h4, #main h5, #main h6{
+	font-family: Rockwell;
+	font-weight: normal;
+}
+
+main h1, #main h1 {
+	font-size: 36px;
+	font-variant: small-caps;
+	color: rgb(57, 88, 106);
+}
+
+main.splash h1, #main.splash h1 {
+	color: rgb(129, 166, 187);
+}
+
+main h1 + p, #main h1 + p {
+	padding-top: 20px;
+}
+
+main h2, #main h2 {
+	font-size: 29px;
+	margin: 15px 0 10px;
+	color: rgb(179, 86, 86);
+}
+
+main.splash h2, #main.splash h2 {
+	color: rgb(185, 100, 100);
+}
+
+main h3, #main h3 {
+	font-size: 28px;
+	margin: 12px 0 4px;
+	font-variant: small-caps;
+	color: rgb(82, 122, 100);
+}
+
+main.splash h3, #main.splash h3 {
+	color: rgb(120, 165, 140);
+}
+
+main h4, #main h4 {
+	font-size: 23px;
+	margin: 10px 0 4px;
+	color: rgb(82, 127, 152);
+}
+
+main.splash h4, #main.splash h4 {
+	color: rgb(198, 198, 118);
+}
+
+main h5, #main h5 {
+	font-size: 20px;
+	margin: 3px 0px 0px;
+	color: rgb(100, 100, 100);
+}
+
+main.splash h5, #main.splash h5 {
+	color: rgb(190, 190, 190);
+}
+
+main p, #main p {
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+main ol, main ul,
+#main ol, #main ul {
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+main ul li, #main ul li {
+	list-style-type: square;
+}
+
+main li, #main li {
+	padding-bottom: 6px;
+}
+
+/* Images / Floating */
+
+main .left, #main .left {
+float: left;
+display: block;
+margin-right: 10px;
+margin-bottom: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .right, #main .right {
+float: right;
+display: block;
+margin-left: 10px;
+margin-bottom: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .noFloat:before, #main .noFloat:before {
+content: " ";
+display: block;
+clear: both;
+opacity: 0;
+height: 0;
+}
+
+/* Sizing */
+
+main .full, #main .full {
+width: 100%;
+}
+
+main .half, #main .half {
+max-width: 50%;
+}
+
+main .quarter, #main .quarter {
+max-width: 25%;
+}
+
+/* Horizontal Rule */
+
+main hr, #main hr {
+	width: 100%;
+	height: 2px;
+	margin: 10px 0;
+	color: rgb(82, 122, 100);
+	background-color: rgb(82, 122, 100);
+	border-color: rgb(82, 122, 100);
+}
+
+main.splash hr, #main.splash hr {
+	color: rgb(129, 166, 187);
+	background-color: rgb(129, 166, 187);
+	border-color: rgb(129, 166, 187);
+}
+
+/* Links */
+
+main a, #main a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 2px solid rgb(110, 131, 157);
+}
+
+main a:hover, #main a:hover {
+	color: rgb(110, 131, 157);
+}
+
+main.splash a, #main.splash a {
+	border-bottom: 2px solid rgb(198, 198, 118);
+}
+
+main.splash a:hover, #main.splash a:hover {
+	color: rgb(198, 198, 118);
+}
+
+/* Tables */
+
+main table, #main table {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+}
+
+main th, #main th {
+	padding: 8px;
+	color: white;
+	font-weight: normal;
+	background-color: rgb(100, 100, 100);
+	text-align: right;
+}
+
+main tr:first-child th, #main tr:first-child th {
+	padding: 6px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(54, 83, 99);
+}
+
+main td, #main td {
+	padding: 8px;
+	color: #333;
+}
+
+main tr:nth-child(odd) td, #main tr:nth-child(odd) td {
+	background-color: rgb(210, 210, 210);
+}
+
+main tr:nth-child(even) td, #main tr:nth-child(even) td {
+	background-color: rgb(220, 220, 220);
+}
+
+main footer, #main #footer {
+	text-align: center;
+	padding: 6px;
+	color: rgb(240, 240, 240);
+	background-color: RGB(70, 107, 129);
+	font-size: 13px;
+}
+
+/* Layout Tools */
+
+div.txtbox, div.quote {
+	margin: 10px 20px;
+	border: 1px solid rgb(40, 140, 180);
+	border-radius: 5px;
+	padding: 6px;
+	font-size: 12px;
+}
+
+/* List Container */
+dl {
+	margin: 10px 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* List Headings */
+dl dt {
+	padding: 8px;
+	font-size: 18px;
+	color: rgb(230, 230, 230);
+	background: rgb(100, 100, 100);
+	border-bottom: 2px solid rgb(40, 140, 180);
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* List Heading Arrows */
+dl dt:after {
+	content: "\276f";
+	color: rgb(230, 230, 230);
+	float: right;
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+/* List Content */
+dl dd {
+	background: rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	height: 0;
+	padding: 0px;
+}
+
+/* Open List Content */
+dl dt.open + dd {
+	height: auto;
+	padding: 8px;
+}
+
+/* Rotate Arrow */
+dl dt.open:after {
+	margin-top: -2px;
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+/* Coding Tools */
+
+div.code, pre {
+	border: 3px solid rgb(40, 140, 180);
+	padding: 4px 8px;
+	background: rgb(90, 90, 90);
+	margin: 10px 40px;
+	line-height: 130%;
+	text-wrap: suppress;
+	color: #fff;
+	font-size: 13px;
+	font-family: "Consolas", "Courier New", "Courier";
+}
+
+code {
+	font-size: 13px;
+	margin: 0;
+	font-family: "Consolas", "Courier New", "Courier";
+}

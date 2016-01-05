@@ -1,0 +1,77 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/values.js" type="text/javascript"></script>
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<img src="images/banner.png" />
+	<p>Click on each box below to generate a random dance move.</p>
+	<main>
+		<section id="partBox" onclick="get('part')">
+			<header>Body Part<span class="selected">Head</span></header>
+			<article>
+				<img src="images/figure.png" />
+				<img id="highlight" src="images/head.png" />
+			</article>
+		</section>
+		<section id="directionBox" onclick="get('direction')">
+			<header>Direction<span class="selected">Forward</span></header>
+			<article>
+				<svg id="direction" class="fwd" viewBox="0 0 180 100">
+					<polygon id="fwd" points="50.028,0 59.774,11.988 53.81,11.988 53.919,29.774 45.965,29.774 45.965,11.879 40,11.879 "/>
+					<polygon id="back" points="50.028,99.775 59.774,87.787 53.81,87.787 53.919,70 45.966,70 45.966,87.894 40.001,87.894 "/>
+					<polygon id="left" points="0,49.747 11.988,40 11.988,45.965 29.774,45.856 29.774,53.81 11.879,53.81 11.879,59.775 "/>
+					<polygon id="right" points="99.774,49.747 87.786,40 87.786,45.965 70.001,45.856 70.001,53.81 87.896,53.81 87.896,59.775 "/>
+					<polygon id="fwdR" points="84.774,14.774 69.405,16.359 73.622,20.577 60.97,33.077 66.594,38.701 79.247,26.047 83.465,30.265 "/>
+					<polygon id="fwdL" points="14.774,14.774 30.144,16.359 25.927,20.577 38.579,33.077 32.955,38.7 20.302,26.047 16.084,30.265 "/>
+					<polygon id="backR" points="84.774,84.775 69.405,83.189 73.622,78.972 60.97,66.472 66.594,60.849 79.247,73.501 83.465,69.285 "/>
+					<polygon id="backL" points="14.774,84.775 30.144,83.189 25.927,78.972 38.579,66.472 32.955,60.849 20.302,73.501 16.084,69.285 "/>
+					<polygon id="up" points="145.253,4.775 155,16.763 149.035,16.763 149.145,34.549 141.191,34.549 141.191,16.654 135.227,16.654 "/>
+					<polygon id="down" points="145.254,94.325 155,82.336 149.035,82.336 149.145,64.549 141.191,64.549 141.191,82.444 135.227,82.444 "/>
+					<polygon class="in" points="139.774,49.521 127.786,39.774 127.786,45.739 110,45.63 110,53.584 127.896,53.584 127.896,59.549 "/>
+					<polygon class="in" points="150.227,49.296 162.215,39.549 162.215,45.514 180,45.406 180,53.36 162.105,53.36 162.105,59.325 "/>
+				</svg>
+			</article>
+		</section>
+		<section id="timeBox" onclick="get('time')">
+			<header>Time<span class="selected">Imperceptibly Slow</span></header>
+			<article>
+				<div id="meter" class="ImperceptiblySlow">
+					<div id="snailImg"></div>
+					<div id="rabbitImg"></div>
+					<div id="bar"></div>
+					<div id="ImperceptiblySlow" class="lines"></div>
+					<div id="Snail" class="lines"></div>
+					<div id="Med-slow" class="lines"></div>
+					<div id="Medium" class="lines"></div>
+					<div id="Med-fast" class="lines"></div>
+					<div id="Fast" class="lines"></div>
+					<div id="Quick" class="lines"></div>
+					<div id="Hyper" class="lines"></div>
+				</div>
+			</article>
+		</section>
+		<section id="levelBox" onclick="get('level')">
+			<header>Level<span class="selected">Ground</span></header>
+			<article>
+				<div id="level"></div>
+			</article>
+		</section>
+		<section id="energyBox" onclick="get('energy')">
+			<header>Energy<span class="selected">Lowest</span></header>
+			<article>
+				<div id="gage">
+					<div id="bar"></div>
+					<div id="cover"></div>
+					<svg id="needle" viewBox="0 0 120 7">
+						<polygon points="0,4 0,3 50,2 60,1 60,6 50,5" fill="white" />
+					</svg>
+				</div>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
