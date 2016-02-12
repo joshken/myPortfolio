@@ -1,0 +1,251 @@
+@import url('fonts.css');
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* GRADIENT BACKGROUND
+ * Change the gradient background here
+ */
+html {
+	height: 100%;
+	background: black;
+	background: -webkit-radial-gradient(ellipse, rgb(180, 180, 180) 0%, rgb(68, 60, 62) 100%);
+	background: radial-gradient(ellipse, rgb(180, 180, 180) 0%, rgb(68, 60, 62) 100%);
+	background-attachment: fixed;
+}
+
+body, .page_color {
+	background: none;
+}
+
+body {
+	padding: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* MAIN CONTENT FRAME
+ * Change the font family, font color, and background color here
+ */
+#main {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	color: rgb(60, 60, 60);
+	font-size: 16px !important;
+	font-family: CenturyGothic, "Helvetica Neue", Arial, Helvetica;
+	background-color: rgb(230, 230, 230);
+	background: -webkit-linear-gradient(top, rgb(200, 200, 200) 0%, white 40%);
+	background: linear-gradient(to bottom, rgb(200, 200, 200) 0%, white 40%);
+	box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+}
+
+#main.splash {
+	background: rgb(54, 48, 49);
+	color: rgb(180, 180, 180);
+}
+
+#main > img:first-child {
+	width: 100%;
+}
+
+#main > div {
+	padding: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* HEADERS
+ * Change the font family for all headers here
+ */
+#main h1, #main h2, #main h3,
+#main h4, #main h5, #main h6{
+	font-family: Rockwell;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+
+/* H1 STYLES ---------------------------*/
+#main h1 {
+	font-size: 36px;
+	font-variant: small-caps;
+	color: rgb(0, 0, 0);
+	margin: 0px;
+}
+
+#main.splash h1 {
+	color: rgb(230, 230, 230);
+}
+
+#main h1 + p {
+	padding-top: 20px;
+}
+
+
+/* H2 STYLES ---------------------------*/
+#main h2 {
+	font-size: 29px;
+	margin: 15px 0 10px;
+	color: rgb(100, 100, 100);
+}
+
+#main.splash h2 {
+	color: rgb(130, 130, 130);
+}
+
+
+/* H3 STYLES ---------------------------*/
+#main h3 {
+	font-size: 28px;
+	margin: 12px 0 4px;
+	font-variant: small-caps;
+	color: rgb(190, 40, 40);
+}
+
+#main.splash h3 {
+	color: rgb(220, 50, 50);
+}
+
+
+/* H4 STYLES ---------------------------*/
+#main h4 {
+	font-size: 23px;
+	margin: 10px 0 4px;
+	color: rgb(10, 130, 150);
+}
+
+#main.splash h4 {
+	color: rgb(130, 130, 130);
+}
+
+
+/* H5 STYLES ---------------------------*/
+#main h5 {
+	font-size: 20px;
+	margin: 3px 0px 0px;
+	color: rgb(190, 80, 80);
+}
+
+#main.splash h5 {
+	color: rgb(255, 70, 70);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* GENERAL TAG STYLES
+ * Change styles for p, ol, and ul tags here
+ */
+#main p {
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+#main ol, #main ul {
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#main ul li {
+	list-style-type: square;
+}
+
+#main li {
+	padding-bottom: 6px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* HORIZONTAL RULE STYLE
+ * Change the color and size of the hr tag here
+ */
+#main hr {
+	width: 100%;
+	height: 2px;
+	margin: 10px 0;
+	color: rgb(158, 0, 0);
+	background-color: rgb(158, 0, 0);
+	border-color: rgb(158, 0, 0);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* LINK STYLES
+ * Change colors for links and hover actions here
+ */
+#main a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 2px solid rgb(40, 150, 180);
+}
+
+#main a:hover {
+	color: rgb(40, 150, 180);
+}
+
+#main.splash a {
+	border-bottom: 2px solid rgb(40, 160, 200);
+}
+
+#main.splash a:hover {
+	color: rgb(40, 160, 200);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* TABLE STYLES */
+#main table {
+	width: 100%;
+	font-size: 14px;
+	border-collapse: collapse;
+}
+
+/* TABLE HEADER CELL ---------------------------*/
+#main th {
+	padding: 8px;
+	color: white;
+	font-weight: normal;
+	background-color: rgb(180, 50, 50);
+	text-align: right;
+}
+
+/* FIRST ROW TABLE HEADER CELL -----------------*/
+#main tr:first-child th {
+	padding: 6px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(150, 30, 30);
+}
+
+/* GENERAL TABLE CELL --------------------------*/
+#main td {
+	padding: 8px;
+	color: black;
+}
+
+/* ODD ROW TABLE CELL --------------------------*/
+#main tr:nth-child(odd) td {
+	background-color: rgb(220, 220, 220);
+}
+
+/* EVEN ROW TABLE CELL -------------------------*/
+#main tr:nth-child(even) td {
+	background-color: rgb(230, 230, 230);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/* COPYRIGHT FOOTER STYLE */
+#main #footer {
+	text-align: center;
+	padding: 6px;
+	color: rgb(190, 190, 190);
+	background-color: rgb(100, 30, 30);
+	font-size: 13px;
+}
