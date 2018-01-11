@@ -2,17 +2,17 @@
   font-family: fuck;
   src: url(/something.ttf); }
 
-/* line 4, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+/* line 4, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/nav.scss */
 body {
   padding-top: 50px; }
 
-/* line 8, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+/* line 8, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/nav.scss */
 nav {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0; }
-  /* line 14, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+  /* line 14, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/nav.scss */
   nav ul {
     list-style: none;
     margin: 0;
@@ -22,7 +22,7 @@ nav {
     border-bottom: 1px solid #1e1e1e;
     background-color: rgba(40, 40, 40, 0.7);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); }
-    /* line 24, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+    /* line 24, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/nav.scss */
     nav ul li {
       font-family: CenturyGothic, helvetica, arial, sans-serif;
       padding: 8 10;
@@ -32,10 +32,10 @@ nav {
       color: #969696;
       cursor: pointer;
       text-align: center; }
-      /* line 34, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+      /* line 34, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/nav.scss */
       nav ul li:hover {
         background-color: rgba(100, 100, 100, 0.6); }
-      /* line 38, /Users/joshkennelly/Sites/Portfolio/css/nav.scss */
+      /* line 38, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/nav.scss */
       nav ul li:last-child {
         border: none; }
 
