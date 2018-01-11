@@ -11,78 +11,32 @@ html {
 }
 
 body {
-    min-height: 100%;
     width: 100%;
     max-width: 1000px;
-    padding: 0;
     margin: 0 auto;
-    background-color: $foreground;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-}
-
-nav {
-    width: 100%;
-    max-width: 1000px;
-    position: fixed;
-    top: 0;
+    padding: 20 0;
     
-    ul {
-        list-style: none;
-        margin: 0;
+    @media (max-width: 1000px) {
         padding: 0;
-        display: flex;
-        width: 100%;
-        border-bottom: 1px solid rgb(30, 30, 30);
-        background-color: rgba(40, 40, 40, 0.95);
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
-        
-        li {
-            font-family: $font-headings;
-            padding: 8 10;
-            font-size: 18px;
-            border-right: 1px solid $lines;
-            flex-grow: 1;
-            color: $content;
-            cursor: pointer;
-            text-align: center;
-            
-            &:hover {
-                background-color: rgba(100, 100, 100, 0.6);
-            }
-            
-            &:last-child {
-                border: none;
-            }
-        }
-    }
-}
-
-main {
-    font-family: $font-content;
-    color: $content;
-    padding: 10 20;
-    padding-top: 40px;
-    font-size: 16px;
-    
-    & > img {
-        width: 100%;
-        max-width: 500px;
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        border-radius: 2px;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-        
-        @media (max-width: 800px) {
-            float: none;
-            margin-bottom: 0;
-        }
     }
     
-    #me {
-        width: 250px;
-        max-width: 40%;
-        float: left;
+    > * {
+        padding: 0;
+        font-size: 16px;
+        font-family: $font-content;
+        color: $content;
+        background: $foreground;
+        box-shadow: 0 0 6px rgba(150, 150, 150, 0.8);
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 2px solid $accent;
+        
+        &:hover {
+            color: $accent;
+        }
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -90,12 +44,12 @@ main {
     }
     
     h1 {
-        color: black;
+        color: $heading1;
         font-size: 30px;
     }
     
     h2 {
-        color: rgb(30, 30, 30);
+        color: $heading1 + rgb(10, 10, 10);
         font-size: 25px;
     }
     
@@ -109,58 +63,160 @@ main {
         margin: 0;
         list-style-type: square;
     }
+}
+
+header {
+    padding-right: 20;
+    overflow: hidden;
     
-    ul#images {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
+    @media (max-width: 680px) {
+        padding: 0 20;
         
-        li {
-            width: 100%;
-            padding-bottom: 15px;
-            
-            &:last-child {
-                padding-bottom: 0;
-            }
-            
-            img {
-                width: 100%;
-                cursor: pointer;
-            }
+        h1 {
+            font-size: 60px;
+            width: 400px;
+        }
+        
+        h3 {
+            clear: both;
+        }
+        
+        img {
+            height: 200px;
+            margin: 20 0;
         }
     }
     
-    a {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 2px solid rgb(40, 190, 250);
+    img {
+        max-height: 600px;
+        max-width: 40%;
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    
+    button {
+        font-family: $font-headings;
+        padding: 8 10;
+        font-size: 18px;
+        flex-grow: 1;
+        width: 50%;
+        color: $content;
+        border: none;
+        background: rgba(180, 180, 180, 0.3);
+        border-bottom: 1px solid rgb(150, 150, 150);
+        margin: 0;
+        cursor: pointer;
+        
+        &.selected {
+            background: rgba(180, 180, 180, 0.6);
+        }
         
         &:hover {
-            color: rgb(40, 190, 250);
+            background: rgba(180, 180, 180, 0.9);
         }
     }
+}
+
+main {
+    margin: 20 0 0;
     
-    #grid {
+    section {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         
         div {
-            width: 33%;
-            padding: 5px;
-            
-            @media (max-width: 750px) {
-                width: 50%;
-            }
+            width: 100%;
+            padding: 15 15 0;
             
             img {
                 width: 100%;
+                box-shadow: 0 0 6px rgba(150, 150, 150, 0.5);
                 cursor: pointer;
-                
-                &:hover {
-                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+            }
+            
+            &:last-child {
+                padding-bottom: 15;
+            }
+            
+            &:hover {
+                img {
+                    box-shadow: 0px 3px 8px rgba(120, 120, 120, 0.8);
                 }
+            }
+        }
+        
+        summary {
+            height: 0;
+            width: 100%;
+            flex-grow: 1;
+            font-color: $content - rgb(40, 40, 40);
+            background: $foreground - rgb(20, 20, 20);
+            box-shadow: inset 0px 0px 12px rgba(80, 80, 80, 0.5);
+            transition: height 0.8s, opacity 0.8s, padding 0.8s;
+            opacity: 0;
+            z-index: 200;
+            
+            &.slide {
+                height: auto;
+                padding: 15px;
+                opacity: 1;
+            }
+            
+            *:first-child {
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    
+    .grid {
+        
+        div {
+            width: 33.33%;
+            padding: 15;
+            position: relative;
+            
+            img {
+                transition: width 0.2s, margin 0.2s;
+                z-index: 5;
+            }
+            
+            .selected {
+                width: 104%;
+                margin-left: -2%;
+                margin-top: -2%;
+                box-shadow: 0px 3px 8px rgba(120, 120, 120, 0.8);
+            }
+            
+            span {
+                opacity: 0;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-top: 5px;
+                margin-left: -50px;
+                background: $foreground - rgb(30, 30, 30);
+                box-shadow: inset 0px 0px 20px rgba(80, 80, 80, 0.5);
+                transform: rotate(-45deg);
+//                transition: opacity 0.8s;
+                z-index: 0;
+                pointer-events: none;
+                
+                &.show {
+                    opacity: 1;
+                }
+            }
+            
+            @media (max-width: 750px) {
+                width: 50%;
             }
         }
     }

@@ -2,148 +2,191 @@
   font-family: fuck;
   src: url(/something.ttf); }
 
-/* line 4, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
+/* line 4, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
 * {
   box-sizing: border-box; }
 
-/* line 8, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
+/* line 8, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
 html {
   height: 100%;
-  background-color: #323232; }
+  background-color: whitesmoke; }
 
-/* line 13, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
+/* line 13, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
 body {
-  min-height: 100%;
   width: 100%;
   max-width: 1000px;
-  padding: 0;
   margin: 0 auto;
-  background-color: #3c3c3c;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); }
-
-/* line 23, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-nav {
-  width: 100%;
-  max-width: 1000px;
-  position: fixed;
-  top: 0; }
-  /* line 29, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  nav ul {
-    list-style: none;
-    margin: 0;
+  padding: 20 0; }
+  @media (max-width: 1000px) {
+    /* line 13, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    body {
+      padding: 0; } }
+  /* line 23, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body > * {
     padding: 0;
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid #1e1e1e;
-    background-color: rgba(40, 40, 40, 0.95);
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8); }
-    /* line 39, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-    nav ul li {
-      font-family: CenturyGothic, helvetica, arial, sans-serif;
-      padding: 8 10;
-      font-size: 18px;
-      border-right: 1px solid #505050;
-      flex-grow: 1;
-      color: #969696;
-      cursor: pointer;
-      text-align: center; }
-      /* line 49, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-      nav ul li:hover {
-        background-color: rgba(100, 100, 100, 0.6); }
-      /* line 53, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-      nav ul li:last-child {
-        border: none; }
-
-/* line 60, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-main {
-  font-family: HelveticaNeue-Thin, helvetica, arial, sans-serif;
-  color: #969696;
-  padding: 10 20;
-  padding-top: 40px;
-  font-size: 16px; }
-  /* line 67, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main > img {
-    width: 100%;
-    max-width: 500px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
-    @media (max-width: 800px) {
-      /* line 67, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-      main > img {
-        float: none;
-        margin-bottom: 0; } }
-  /* line 82, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main #me {
-    width: 250px;
-    max-width: 40%;
-    float: left; }
-  /* line 88, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main h1, main h2, main h3, main h4, main h5, main h6 {
-    font-family: CenturyGothic, helvetica, arial, sans-serif; }
-  /* line 92, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main h1 {
-    color: black;
-    font-size: 30px; }
-  /* line 97, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main h2 {
-    color: #1e1e1e;
-    font-size: 25px; }
-  /* line 102, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main h3 {
+    font-size: 16px;
+    font-family: HelveticaNeue-Thin, helvetica, arial, sans-serif;
     color: #646464;
-    font-size: 20px; }
-  /* line 107, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main ul {
-    display: inline-block;
-    margin: 0;
-    list-style-type: square; }
-  /* line 113, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main ul#images {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%; }
-    /* line 119, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-    main ul#images li {
-      width: 100%;
-      padding-bottom: 15px; }
-      /* line 123, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-      main ul#images li:last-child {
-        padding-bottom: 0; }
-      /* line 127, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-      main ul#images li img {
-        width: 100%;
-        cursor: pointer; }
-  /* line 134, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main a {
+    background: #e6e6e6;
+    box-shadow: 0 0 6px rgba(150, 150, 150, 0.8); }
+  /* line 32, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body a {
     color: inherit;
     text-decoration: none;
     border-bottom: 2px solid #28befa; }
-    /* line 139, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-    main a:hover {
+    /* line 37, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    body a:hover {
       color: #28befa; }
-  /* line 144, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-  main #grid {
+  /* line 42, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: CenturyGothic, helvetica, arial, sans-serif; }
+  /* line 46, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body h1 {
+    color: #505050;
+    font-size: 30px; }
+  /* line 51, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body h2 {
+    color: #5a5a5a;
+    font-size: 25px; }
+  /* line 56, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body h3 {
+    color: #646464;
+    font-size: 20px; }
+  /* line 61, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  body ul {
+    display: inline-block;
+    margin: 0;
+    list-style-type: square; }
+
+/* line 68, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+header {
+  padding-right: 20;
+  overflow: hidden; }
+  @media (max-width: 680px) {
+    /* line 68, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    header {
+      padding: 0 20; }
+      /* line 75, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      header h1 {
+        font-size: 60px;
+        width: 400px; }
+      /* line 80, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      header h3 {
+        clear: both; }
+      /* line 84, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      header img {
+        height: 200px;
+        margin: 20 0; } }
+  /* line 90, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  header img {
+    max-height: 600px;
+    max-width: 40%;
+    float: left;
+    margin-right: 20px; }
+
+/* line 98, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+nav {
+  display: flex;
+  width: 100%; }
+  /* line 102, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  nav button {
+    font-family: CenturyGothic, helvetica, arial, sans-serif;
+    padding: 8 10;
+    font-size: 18px;
+    flex-grow: 1;
+    width: 50%;
+    color: #646464;
+    border: none;
+    background: rgba(180, 180, 180, 0.3);
+    border-bottom: 1px solid #969696;
+    margin: 0;
+    cursor: pointer; }
+    /* line 115, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    nav button.selected {
+      background: rgba(180, 180, 180, 0.6); }
+    /* line 119, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    nav button:hover {
+      background: rgba(180, 180, 180, 0.9); }
+
+/* line 125, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+main {
+  margin: 20 0 0; }
+  /* line 128, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  main section {
     width: 100%;
     display: flex;
     flex-wrap: wrap; }
-    /* line 149, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-    main #grid div {
-      width: 33%;
-      padding: 5px; }
-      @media (max-width: 750px) {
-        /* line 149, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-        main #grid div {
-          width: 50%; } }
-      /* line 157, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-      main #grid div img {
+    /* line 133, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    main section div {
+      width: 100%;
+      padding: 15 15 0; }
+      /* line 137, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main section div img {
         width: 100%;
+        box-shadow: 0 0 6px rgba(150, 150, 150, 0.5);
         cursor: pointer; }
-        /* line 161, /Users/joshkennelly/Sites/myPortfolio/css/index.scss */
-        main #grid div img:hover {
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
+      /* line 143, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main section div:last-child {
+        padding-bottom: 15; }
+      /* line 148, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main section div:hover img {
+        box-shadow: 0px 3px 8px rgba(120, 120, 120, 0.8); }
+    /* line 154, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    main section summary {
+      height: 0;
+      width: 100%;
+      flex-grow: 1;
+      font-color: #3c3c3c;
+      background: #d2d2d2;
+      box-shadow: inset 0px 0px 12px rgba(80, 80, 80, 0.5);
+      transition: height 0.8s, opacity 0.8s, padding 0.8s;
+      opacity: 0;
+      z-index: 200; }
+      /* line 165, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main section summary.slide {
+        height: auto;
+        padding: 15px;
+        opacity: 1; }
+      /* line 171, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main section summary *:first-child {
+        padding-top: 0;
+        margin-top: 0; }
+  /* line 180, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  main .grid div {
+    width: 33.33%;
+    padding: 15;
+    position: relative; }
+    /* line 185, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    main .grid div img {
+      transition: width 0.2s, margin 0.2s;
+      z-index: 5; }
+    /* line 190, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    main .grid div .selected {
+      width: 104%;
+      margin-left: -2%;
+      margin-top: -2%;
+      box-shadow: 0px 3px 8px rgba(120, 120, 120, 0.8); }
+    /* line 197, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    main .grid div span {
+      opacity: 0;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-top: 5px;
+      margin-left: -50px;
+      background: #c8c8c8;
+      box-shadow: inset 0px 0px 20px rgba(80, 80, 80, 0.5);
+      transform: rotate(-45deg);
+      z-index: 0;
+      pointer-events: none; }
+      /* line 213, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main .grid div span.show {
+        opacity: 1; }
+    @media (max-width: 750px) {
+      /* line 180, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      main .grid div {
+        width: 50%; } }
 
 /*# sourceMappingURL=index.css.map */
