@@ -1,7 +1,8 @@
-$background: rgb(50, 50, 50);
-$foreground: rgb(60, 60, 60);
-$lines: rgb(80, 80, 80);
+$background: rgb(245, 245, 245);
+$foreground: $background - rgb(15, 15, 15);
 
 $heading1: rgb(80, 80, 80);
 
-$content: rgb(150, 150, 150);
+$content: rgb(100, 100, 100);
+
+$accent: rgba(40, 190, 250, 1);

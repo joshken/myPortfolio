@@ -1,21 +1,45 @@
 <html>
 <head>
-   <link rel="stylesheet" href="/css/index.css" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/summaries.js"></script>
+    <script src="js/graphicDesign.js"></script>
+	<script src="js/contentController.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li onclick="location.href='/'">About Me</li>
-            <li onclick="location.href='/graphicDesign/'">Graphic Design</li>
-            <li onclick="location.href='/webDev/'">Web Development</li>
-        </ul>
-    </nav>
-    <main>
+    <header>
+        <img src="me.jpg" />
         <h1>Josh Kennelly</h1>
-        <p>I am a designer and developer. Included in this portfolio are the projects I have worked on, both from school and work.</p>
-        <p>I studied Software Engineering and Web Development at BYU-Idaho and worked for BYU-Idaho as a Web Developer and Graphic Designer as part of their Online Curriculum Development team.</p>
-        <p>At work, I was responsible for creating graphic banners and course templates for the classes we were developing for online students.</p>
-        <p>Our team would meet with the course instructors to identify the needs of their courses. When a concept was too difficult to understand without the guidance of the instructor, we would design infographics and interactive content to help the students learn these concepts.</p>
+        <h3>Background</h3>
+        <p>I am a designer and developer from Idaho. I studied Software Engineering and Web Development at BYU-Idaho. They hired me as a Web Developer and Graphic Designer for Online Curriculum Development.</p>
+        <p>At work, I was responsible for creating graphic banners and course templates for our online courses.</p>
+        <p>A team of us would meet regularly with the instructors to identify the needs of each course. Occasionally, we were asked to design infographics and interactive activities to help online students understand difficult concepts.</p>
+        <h3>Now</h3>
+        <p>I'm currently working as a Technical Specialist at Apple in Honolulu while I finish my degree online in Web Development through Colorado Technical University.</p>
+        <p>I am always looking for freelance work in web &amp; graphic design to grow and improve my skills in Web Development.</p>
+        <h3>Contact</h3>
+        <p>If you like what I have done and have a project that you'd like me to do, <a href="mailto:josh.kennelly@me.com?subject=Consultation%20Request">email me</a> for a consultation.</p>
+    </header>
+    <main>
+        <nav>
+            <button class="selected">Web Development</button>
+            <button>Graphic Design</button>
+        </nav>
+        <section class="grid">
+            <div><img src="webDev/APRegions/screenshot.png" /></div>
+            <div><img src="webDev/bookshelf/screenshot.png" /></div>
+            <div><img src="webDev/DeductionInduction/screenshot.png" /></div>
+            <div><img src="webDev/FontGame/screenshot.png" /></div>
+            <div><img src="webDev/Maps/screenshot.png" /></div>
+            <div><img src="webDev/MedicalTerminology/screenshot.png" /></div>
+            <div><img src="webDev/planes/screenshot.png" /></div>
+            <div><img src="webDev/POLSC/screenshot.png" /></div>
+            <div><img src="webDev/RandomDance/screenshot.png" /></div>
+            <div><img src="webDev/Skulls/screenshot.png" /></div>
+            <div><img src="webDev/SkullsSlider/screenshot.png" /></div>
+            <div><img src="webDev/ViewMaster/screenshot.png" /></div>
+        </section>
     </main>
 </body>
 </html>
