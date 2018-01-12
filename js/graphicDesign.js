@@ -87,11 +87,24 @@ graphics[20] = {
 function getGraphics() {
     var graphicsList = "";
     for (var i = 0; i < graphics.length; i++) {
-        graphicsList += '<div onclick="location.href=\'';
+        graphicsList += '<div onclick="previewTemplate(\'';
         graphicsList += graphics[i].template;
-        graphicsList += '\'"><img src="';
+        graphicsList += '\')"><img src="';
         graphicsList += graphics[i].image;
         graphicsList += '" /></div>';
     }
     return graphicsList;
+}
+
+function closeTemplate() {
+    $("aside").remove();
+}
+
+function previewTemplate(template) {
+    var preview = "<aside>";
+    preview += '<iframe src="'+template+'" />';
+    preview += '<button onclick="closeTemplate()">x</button>';
+    preview += "</aside>";
+    
+    $("body").append(preview);
 }
