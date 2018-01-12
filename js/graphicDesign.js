@@ -93,6 +93,7 @@ function getGraphics() {
         graphicsList += graphics[i].image;
         graphicsList += '" /></div>';
     }
+    
     return graphicsList;
 }
 
