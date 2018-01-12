@@ -68,7 +68,7 @@ header {
       padding: 0 20; }
       /* line 75, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
       header h1 {
-        font-size: 60px;
+        font-size: 56px;
         width: 400px; }
       /* line 80, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
       header h3 {
@@ -133,42 +133,37 @@ main {
         box-shadow: 0px 3px 8px rgba(120, 120, 120, 0.8); }
     /* line 154, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
     main section summary {
-      height: 0;
+      height: auto;
       width: 100%;
       flex-grow: 1;
       font-color: #3c3c3c;
       background: #d2d2d2;
       box-shadow: inset 0px 0px 12px rgba(80, 80, 80, 0.5);
-      transition: height 0.8s, opacity 0.8s, padding 0.8s;
-      opacity: 0;
+      padding: 15px;
+      opacity: 1;
       z-index: 200; }
       /* line 165, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
-      main section summary.slide {
-        height: auto;
-        padding: 15px;
-        opacity: 1; }
-      /* line 171, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
       main section summary *:first-child {
         padding-top: 0;
         margin-top: 0; }
-  /* line 180, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  /* line 174, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
   main .grid div {
     width: 33.33%;
     padding: 15;
     position: relative; }
-    /* line 185, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    /* line 179, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
     main .grid div img {
       transition: width 0.2s, margin 0.2s;
       z-index: 5; }
-    /* line 190, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    /* line 184, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
     main .grid div .selected {
       width: 104%;
       margin-left: -2%;
       margin-top: -2%;
       box-shadow: 0px 3px 8px rgba(120, 120, 120, 0.8); }
-    /* line 197, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+    /* line 191, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
     main .grid div span {
-      opacity: 0;
+      opacity: 1;
       width: 100px;
       height: 100px;
       position: absolute;
@@ -181,12 +176,40 @@ main {
       transform: rotate(-45deg);
       z-index: 0;
       pointer-events: none; }
-      /* line 213, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
-      main .grid div span.show {
-        opacity: 1; }
     @media (max-width: 750px) {
-      /* line 180, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+      /* line 174, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
       main .grid div {
         width: 50%; } }
+
+/* line 214, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 40, 40, 0.8);
+  padding: 40px; }
+  /* line 223, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  aside iframe {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    background: #3c3c3c; }
+  /* line 233, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  aside button {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 3;
+    top: -6;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    transform: scaleX(1.2); }
 
 /*# sourceMappingURL=index.css.map */

@@ -58,16 +58,11 @@ $(document).ready(function() {
             var $insertPoint = $(".grid div").eq(sumPosition[currentLayout][index]);
             
             // Insert the box in the correct position
-            $("<summary></summary>").insertAfter($insertPoint);
+            $("<summary></summary>").html(getSummary(index)).insertAfter($insertPoint);
             
-            // Fill in the summary
-            $("summary").html(getSummary(index));
-            
-            // Open the summary box and select the image
-            $("summary").addClass("slide").after(function() {
-                $img.parent().append("<span class='show'></span>");
-                $img.addClass("selected");
-            });
+            // Select the image and add an arrow
+            $img.parent().append("<span></span>");
+            $img.addClass("selected");
         }
     });
 });
