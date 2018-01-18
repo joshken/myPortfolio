@@ -16,6 +16,15 @@ $(document).ready(function() {
     
     refreshLayout();
     
+    // Add toggle events for about me
+    $("header h1 div").click(function() {
+        if ($("header").hasClass("shrink")) {
+            $("header").removeClass("shrink");
+        } else {
+            $("header").addClass("shrink");
+        }
+    });
+    
     // Add toggle events for navigations buttons
     $("nav button").click(function() {
         // Toggle the button
@@ -28,43 +37,14 @@ $(document).ready(function() {
             // Load content
             var selectedContent = $("nav .selected").html();
             if (selectedContent == "Graphic Design") {
-                $("section").html(getGraphics()).removeClass("grid");
+                $("main section").html(getGraphics()).removeClass("grid");
             } else {
-                location.href = "index.html";
+                $("main section").html(getWebDev()).addClass("grid");
             }
         }
     });
     
-    // Add click events for images in the grid
-    $(".grid div img").click(function() {
-        $img = $(this);
-        
-        // Unselect all other images and close the summary box
-        $(".grid div img").not(this).removeClass("selected");
-        $(".grid div span").remove();
-        $("summary").remove();
-        
-        // If the screen was just resized we don't want to close the summary box
-        if (resizeOccured) {
-            $img.removeClass("selected");
-        }
-        
-        // If the current image was clicked close the summary box; otherwise, open the new one
-        if ($img.hasClass("selected")) {
-            $img.removeClass("selected");
-        } else {
-            // Find out where to insert the summary box
-            var index = $img.parent().index();
-            var $insertPoint = $(".grid div").eq(sumPosition[currentLayout][index]);
-            
-            // Insert the box in the correct position
-            $("<summary></summary>").html(getSummary(index)).insertAfter($insertPoint);
-            
-            // Select the image and add an arrow
-            $img.parent().append("<span></span>");
-            $img.addClass("selected");
-        }
-    });
+    $("nav button").eq(0).click();
 });
 
 $(window).resize(function() {
@@ -77,5 +57,15 @@ $(window).resize(function() {
         resizeOccured = true;
         $(".grid div .selected").click();
         resizeOccured = false;
+    }
+});
+
+$(document).scroll(function() {
+    var mainTop = $("main").position().top;
+    var scrollTop = $("body").scrollTop();
+    if (scrollTop >= mainTop) {
+        $("nav").addClass("float");
+    } else {
+        $("nav").removeClass("float");
     }
 });

@@ -66,32 +66,83 @@ body {
 }
 
 header {
-    padding-right: 20;
     overflow: hidden;
     
     @media (max-width: 680px) {
         padding: 0 20;
         
         h1 {
-            font-size: 56px;
-            width: 400px;
+            font-size: 45px;
+            
+            br {
+                display: block !important;
+            }
         }
         
-        h3 {
+        section {
+            padding: 0 !important;
             clear: both;
         }
         
         img {
-            height: 200px;
+            height: 150px;
             margin: 20 0;
         }
     }
     
     img {
-        max-height: 600px;
-        max-width: 40%;
         float: left;
+        max-height: 650px;
+        max-width: 40%;
         margin-right: 20px;
+        transition: max-height 0.3s;
+    }
+    
+    h1 {
+        br {
+            display: none;
+        }
+        
+        div {
+            font-size: 16px;
+            margin-top: 8px;
+            color: $content + rgb(40, 40, 40);
+            cursor: pointer;
+
+            span {
+                display: inline-block;
+                font-weight: normal;
+                transform: scaleX(2) rotate(-90deg);
+                transition: transform 0.2s;
+                margin-left: 8px;
+            }
+        }
+    }
+    
+    section {
+        height: auto;
+        padding: 0 20;
+        transition: height 1s;
+    }
+    
+    &.shrink {
+        img {
+            max-height: 150px;
+        }
+        
+        h1 {
+            font-size: 45px;
+            
+            span {
+                transform: scaleX(2) rotate(90deg);
+            }
+        }
+        
+        section {
+            height: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
     }
 }
 
@@ -99,25 +150,35 @@ nav {
     display: flex;
     width: 100%;
     
+    &.float {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        max-width: 1000px;
+    }
+    
     button {
         font-family: $font-headings;
         padding: 8 10;
         font-size: 18px;
         flex-grow: 1;
         width: 50%;
-        color: $content;
+        color: $content + rgb(70, 70, 70);
         border: none;
-        background: rgba(180, 180, 180, 0.3);
-        border-bottom: 1px solid rgb(150, 150, 150);
+        background: linear-gradient(to bottom, rgb(245, 245, 245) 70%, rgb(230, 230, 230));
+        border-bottom: 2px solid rgb(180, 180, 180);
+        box-shadow: 0 2px 2px rgba(200, 200, 200, 0.4);
         margin: 0;
         cursor: pointer;
         
         &.selected {
-            background: rgba(180, 180, 180, 0.6);
+            color: $accent - rgb(40, 40, 40);
+            border-color: $accent - rgb(40, 40, 40);
+            background: linear-gradient(to bottom, rgb(245, 245, 245) 70%, $accent + rgb(60, 60, 60));
         }
         
         &:hover {
-            background: rgba(180, 180, 180, 0.9);
+            background: rgb(240, 240, 240);
         }
     }
 }
@@ -211,7 +272,7 @@ main {
     }
 }
 
-aside {
+body > aside {
     position: fixed;
     top: 0;
     left: 0;
