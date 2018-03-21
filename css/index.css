@@ -236,8 +236,9 @@ body > aside {
   width: 100%;
   height: 100%;
   background: rgba(40, 40, 40, 0.8);
-  padding: 40px; }
-  /* line 284, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  padding: 40px;
+  z-index: 2000; }
+  /* line 285, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
   body > aside iframe {
     margin: auto;
     width: 100%;
@@ -246,7 +247,7 @@ body > aside {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     border-radius: 4px;
     background: #3c3c3c; }
-  /* line 294, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
+  /* line 295, /Users/joshkennelly/Documents/Web Development/myPortfolio/css/index.scss */
   body > aside button {
     background: none;
     border: none;
@@ -257,6 +258,7 @@ body > aside {
     font-size: 40px;
     color: rgba(255, 255, 255, 0.5);
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    transform: scaleX(1.2); }
+    transform: scaleX(1.2);
+    cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */

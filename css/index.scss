@@ -280,6 +280,7 @@ body > aside {
     height: 100%;
     background: rgba(40, 40, 40, 0.8);
     padding: 40px;
+    z-index: 2000;
     
     iframe {
         margin: auto;
@@ -302,5 +303,6 @@ body > aside {
         color: rgba(255, 255, 255, 0.5);
         text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
         transform: scaleX(1.2);
+        cursor: pointer;
     }
 }
